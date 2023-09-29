@@ -3,6 +3,37 @@ $(function() {
         $(this)
         .addClass('active').siblings().removeClass('active')
         .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+        console.log($(this).index());
+        $('.tabs__caption li').removeClass('active6 active5 active4 active3 active2');
+        switch($(this).index()) {
+            case 0 :
+                break;
+            case 1 :
+                $('.tabs__caption li').eq(0).addClass('active6');
+                break;
+            case 2 :
+                $('.tabs__caption li').eq(0).addClass('active5');
+                $('.tabs__caption li').eq(1).addClass('active6');
+                break;
+            case 3 :
+                $('.tabs__caption li').eq(0).addClass('active4');
+                $('.tabs__caption li').eq(1).addClass('active5');
+                $('.tabs__caption li').eq(2).addClass('active6');
+                break;
+            case 4 :
+                $('.tabs__caption li').eq(0).addClass('active3');
+                $('.tabs__caption li').eq(1).addClass('active4');
+                $('.tabs__caption li').eq(2).addClass('active5');
+                $('.tabs__caption li').eq(3).addClass('active6');
+                break;
+            case 5 :
+                $('.tabs__caption li').eq(0).addClass('active2');
+                $('.tabs__caption li').eq(1).addClass('active3');
+                $('.tabs__caption li').eq(2).addClass('active5');
+                $('.tabs__caption li').eq(3).addClass('active5');
+                $('.tabs__caption li').eq(4).addClass('active6');
+                break;
+        }
     });
 
     if($('.accordeon').length) {
@@ -21,29 +52,8 @@ $(function() {
             }
         });
     }
-    //menu
-    if(jQuery('.menu-toggle').length) {
-        var menu = $('.menu-toggle');
-        menu.on('click', function(){
-            $('.main-menu').toggleClass('active');
-            $('.menu-toggle').toggleClass('active');
-            $('body').toggleClass('body-modal-open');
-        });
-        $('.main-menu').mouseup(function (e){ // событие клика по веб-документу
-            var div = $(".main-menu ul"); // тут указываем ID элемента
-            var close = $('.menu-toggle');
-            if (close.is(e.target)) {
-        
-            } else if (!div.is(e.target) // если клик был не по нашему блоку
-            && div.has(e.target).length === 0) { // и не по его дочерним элементам
-                $('.main-menu').toggleClass('active');
-                $('.menu-toggle').toggleClass('active');
-                $('body').toggleClass('body-modal-open');
-              
-            }
-        });
-    }
-    if(jQuery('.scroll-to').length) {
+
+    if($('.scroll-to').length) {
         var $page = $('html, body');
         $('.scroll-to[href*="#"]').click(function() {
             $page.animate({
@@ -58,15 +68,12 @@ $(function() {
     }
 
     //select-number form
-    if(jQuery('.phone-mask').length) {
-        jQuery(function($){
-            $(".phone-mask").mask("+38 (999) 999-99-99");
-        });
+    if($('.phone-mask').length) {
+        $(".phone-mask").mask("+38 (999) 999-99-99");
     }
 
-
     //modal
-    if(jQuery('.modal__wrap').length) {
+    if($('.modal__wrap').length) {
         let modalWrap = $('.modal__wrap');
         $(".modal-open").click(function (e){
           e.preventDefault();
@@ -121,12 +128,8 @@ $(function() {
     $('form').submit(function() { 
         const form = $(this);
         form.find('.rfield').addClass('empty_field');
-
-        // Функция проверки полей формы
-
         form.find('.rfield').each(function(){
             if($(this).val() != ''){
-                // Если поле не пустое удаляем класс-указание
                 $(this).removeClass('empty_field');
                 if (!form.find('.empty_field').length) {
                     $.ajax({
