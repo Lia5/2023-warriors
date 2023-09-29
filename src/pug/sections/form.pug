@@ -3,8 +3,9 @@ section.form
   .container 
     .row
       .col-12.col-lg-6
-        img(src="img/form.webp", alt="form")
-      .col-12.col-lg-5
+        .form__img
+          img(src="img/form.webp", alt="form")
+      .col-12.col-lg-6.col-xl-5
         .subtitle
           span Створять
           span дітям
@@ -20,15 +21,15 @@ section.form
           span рік!
         form.form__body(enctype="multipart/form-data")
           label.form-line
-            input.form-line__input.required.form-line__input-phone(type="text" placeholder="Як вас звати?" required name="contactInfo_name")
+            input.form-line__input.rfield(type="text" placeholder="Як вас звати?" required name="contactInfo_name")
             span.form-line__label Ваше ім'я*
             span.error Поле обов'язкове
           label.form-line
-            input.form-line__input.required.form-line__input-phone(type="text" placeholder="+380 (00) 000 00 00" required name="contactInfo_phone")
+            input.form-line__input.rfield.phone-mask(type="text" placeholder="+380 (00) 000 00 00" required name="contactInfo_phone")
             span.form-line__label Ваш номер телефону*
             span.error Поле обов'язкове
           label.form-line
-            input.form-line__input.required.form-line__input-phone(type="text" placeholder="example@mail.com" name="contactInfo_email")
+            input.form-line__input(type="text" placeholder="example@mail.com" name="contactInfo_email")
             span.form-line__label Ваш e-mail
           .form__btn(data-modal="#modalFinish")
             button(type="submit").btn Забронювати дату"

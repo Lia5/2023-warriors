@@ -1,12 +1,12 @@
 #modalFinish.modal.disabled
-    .modal__wrap  
+    .modal__wrap.animated
         .close.modal-close
             svg.icon
               use(xlink:href="#icon-close")
         .modal__body
             .modal__title Дякую!
 #modalGift.modal.disabled
-    .modal__wrap 
+    .modal__wrap.animated
         .close.modal-close
             svg.icon
               use(xlink:href="#icon-close")
@@ -24,11 +24,11 @@
                 input(type='hidden', name='info', value='Отримати подарунок')
                 .form-line
                   label
-                    input(type="text" placeholder="номер телефону" name="phone").modal__input.phone-mask
+                    input(type="text" placeholder="номер телефону" name="phone").modal__input.phone-mask.rfield
                 .modal__btn(data-modal="#modalFinish")
                   input(type="submit" value="Отримати подарунок").btn
 #packageMin.modal.disabled
-    .modal__wrap
+    .modal__wrap.animated
         .close.modal-close
             svg.icon
               use(xlink:href="#icon-close")
@@ -45,11 +45,11 @@
                 input(type='hidden', name='info', value='пакет мініум')
                 .form-line
                   label
-                    input(type="text" placeholder="номер телефону" name="phone").modal__input.phone-mask
+                    input(type="text" placeholder="номер телефону" name="phone").modal__input.phone-mask.rfield
                 .modal__btn(data-modal="#modalFinish")
                   input(type="submit" value="Замовити").btn
 #packageStandart.modal.disabled
-    .modal__wrap
+    .modal__wrap.animated
         .close.modal-close
             svg.icon
               use(xlink:href="#icon-close")
@@ -66,11 +66,11 @@
                 input(type='hidden', name='info', value='пакет стандарт')
                 .form-line
                   label
-                    input(type="text" placeholder="номер телефону" name="phone").modal__input.phone-mask
+                    input(type="text" placeholder="номер телефону" name="phone").modal__input.phone-mask.rfield
                 .modal__btn(data-modal="#modalFinish")
                   input(type="submit" value="Замовити").btn
 #packageVip.modal.disabled
-    .modal__wrap
+    .modal__wrap.animated
         .close.modal-close
             svg.icon
               use(xlink:href="#icon-close")
@@ -87,11 +87,11 @@
                 input(type='hidden', name='info', value='пакет VIP')
                 .form-line
                   label
-                    input(type="text" placeholder="номер телефону" name="phone").modal__input.phone-mask
+                    input(type="text" placeholder="номер телефону" name="phone").modal__input.phone-mask.rfield
                 .modal__btn(data-modal="#modalFinish")
                   input(type="submit" value="Замовити").btn
 #policy.modal.disabled
-    .modal__wrap
+    .modal__wrap.animated
         .close.modal-close
             svg.icon
               use(xlink:href="#icon-close")

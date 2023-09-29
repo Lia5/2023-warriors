@@ -1,6 +1,13 @@
 .home {
-  padding-top: 147px;
-  padding-bottom: 145px;
+  padding-top: 200px;
+  padding-bottom: 240px;
+  @include media-md {
+    padding-bottom: 0;
+  }
+  @include media-lg {
+    padding-top: 147px;
+    padding-bottom: 145px;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -49,7 +56,10 @@
     margin: 47px auto 0;
     text-align: center;
     .btn {
-      padding: 30px 35px;
+      padding: 15px 35px;
+      @include media-lg {
+        padding: 30px 35px;
+      }
     }
   }
 }

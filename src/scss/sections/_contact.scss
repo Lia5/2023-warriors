@@ -17,7 +17,11 @@
     justify-content: center;
   }
   .description {
+    display: flex;
     margin-bottom: 40px;
+    @include media-lg {
+      display: block;
+    }
     a {
       color: #1F1F1F;
       &:hover {
@@ -27,12 +31,26 @@
   }
   &__info {
     margin-top: 70px;
-    margin-left: 35%;
     max-width: 363px;
+    @include media-xl {
+      margin-left: 35%;
+    }
 
   }
   .icon {
     width: 24px;
     height: 24px;
+    margin-right: 15px;
+    @include media-lg {
+      margin-right: 0;
+    }
+  }
+  &__img {
+    img {
+      max-width: 100%;
+      @include media-lg {
+        max-width: initial;
+      }
+    }
   }
 }

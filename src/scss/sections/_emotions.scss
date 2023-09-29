@@ -23,50 +23,112 @@
       max-width: 396px;
     }
   }
+  &__img {
+    img {
+    max-width: 100%;
+    @include media-xl {
+      max-width: initial;
+    }
+    }
+  }
   &__description {
     position: relative;
     &:before {
       content: "";
       position: absolute;
-      top: -106px;
-      right: -80px;
-      width: 1531px;
-      height: 947px;
+      top: 44px;
+      right: -25%;
+      width: 180%;
+      height: 344px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
       background-image: url('../img/bg/flash.webp');
+      @include media-lg {
+        top: -86px;
+        right: 300px;
+        width: 751px;
+        height: 467px;
+      }
+      @include media-xl {
+        top: -106px;
+        right: -80px;
+        width: 1531px;
+        height: 947px;
+      }
     }
   }
   &-tabs {
     display: flex;
-    margin-top: 180px;
+    margin-top: 300px;
+    @include media-lg {
+      margin-top: 180px;
+    }
     &__caption {
-      font-size: 70px;
+      font-size: 30px;
       font-weight: 600;
-      line-height: 100px;
+      line-height: 1;
       text-transform: uppercase;
       white-space: nowrap;
+      display: flex;
+      overflow: auto;
+      @include media-md {
+        display: block;
+        font-size: 30px;
+        line-height: 1.2;
+        overflow: initial;
+        margin-top: 60px;
+      }
+      @include media-lg {
+        margin-top: 50px;
+        font-size: 49px;
+        line-height: 1.2;
+      }
+      @include media-xl {
+        margin-top: 0;
+        font-size: 70px;
+        line-height: 100px;
+      }
       li {
         display: flex;
         align-items: baseline;
         margin-bottom: 15px;
+        padding-right: 15px;
+        @include media-md {
+          padding: 0;
+        }
       }
     }
     &__number {
+      display: none;
       font-size: 20px;
       line-height: 1;
       margin-right: 14px;
       padding-bottom: 5px;
+      @include media-md {
+        display: block;
+      }
     }
     &__contents {
       margin-top: 25px;
     }
     .text {
       margin-top: 55px;
+      @include media-md {
+        margin-left: 20px;
+        max-width: 325px;
+      }
       @include media-lg {
         margin-left: 20%;
         max-width: 325px;
+      }
+    }
+    &__img {
+      img {
+        max-width: 100%;
+        @include media-xl {
+          max-width: initial;
+        }
       }
     }
   }

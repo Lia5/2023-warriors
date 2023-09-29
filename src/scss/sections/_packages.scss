@@ -1,5 +1,11 @@
 .packages {
   padding-bottom: 400px;
+  @include media-lg {
+    padding-bottom: 300px;
+  }
+  @include media-xl {
+    padding-bottom: 400px;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -18,26 +24,51 @@
     margin-bottom: 80px;
     position: relative;
     &:before {
-      content: "";
-      position: absolute;
-      top: -457px;
-      left: -73px;
-      width: 731px;
-      height: 741px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      background-image: url('../img/bg/cap.webp');
+      @include media-lg {
+        content: "";
+        position: absolute;
+        top: -457px;
+        left: -51px;
+        width: 431px;
+        height: 541px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url('../img/bg/cap.webp');
+      }
+      @include media-xl {
+        top: -457px;
+        left: -73px;
+        width: 731px;
+        height: 741px;
+      }
     }
     &--steps {
       &:before {
+        content: "";
+        position: absolute;
         left: auto;
         top: auto;
-        bottom: -127px;
-        right: -360px;
-        width: 811px;
-        height: 865px;
+        bottom: 96px;
+        right: 0;
+        width: 96%;
+        height: 325px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
         background-image: url('../img/bg/cat.webp');
+        @include media-lg {
+          bottom: 73px;
+          right: -180px;
+          width: 471px;
+          height: 555px;
+        }
+        @include media-xl {
+          bottom: -127px;
+          right: -360px;
+          width: 811px;
+          height: 865px;
+        }
       }
     }
   }
@@ -45,22 +76,49 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 55px 57px 62px 52px;
+    padding: 20px;
     border-radius: 40px;
     border: 2px solid #1F1F1F;
     background: #FFF;
+    max-width: 527px;
+    margin-left: auto;
+    margin-right: auto;
+    @include media-xl {
+      padding: 55px 57px 62px 52px;
+    }
+    &-wrap {
+      margin-bottom: 30px;
+      @include media-xl {
+        margin-bottom: 0;
+      }
+    }
     &__name {
       padding-left: 10px;
       margin-bottom: 33px;
       color: #246EB9;
-      font-size: 36px;
+      font-size: 32px;
       font-weight: 700;
       line-height: 40px;
       text-transform: uppercase;
+      @include media-lg {
+        font-size: 36px;
+      }
     }
     &__line {
       display: flex;
-      align-items: center;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      @include media-lg {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+      .accent-color {
+        margin-bottom: 10px;
+        @include media-lg {
+          margin-bottom: 0;
+        }
+      }
     }
     &__group {
       display: flex;
@@ -80,13 +138,18 @@
       display: flex;
       white-space: nowrap;
       color: #FFF;
-      font-size: 20px;
       font-weight: 500;
-      line-height: 24px;
-      padding: 14px 19px;
+      line-height: 1.2;
       border-radius: 50px;
       margin-bottom: 8px;
       margin-right: 8px;
+      font-size: 17px;
+      padding: 10px 15px;
+      @include media-lg {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 14px 19px;
+      }
       &--yellow {
         background: rgba(238, 157, 0, 0.70);
       }
@@ -106,9 +169,13 @@
     &__description {
       margin-top: auto;
       text-align: right;
-      font-size: 28px;
+      font-size: 23px;
       font-weight: 400;
-      line-height: 40px;
+      line-height: 1.4;
+      @include media-xl {
+        font-size: 28px;
+        line-height: 40px;
+      }
       .accent-color {
         padding-left: 10px;
       }
@@ -163,21 +230,28 @@
   &__steps {
     display: flex;
     justify-content: center;
-    margin-top: 134px;
+    flex-wrap: wrap;
+    @include media-xl {
+      flex-wrap: nowrap;
+      margin-top: 134px;
+    }
   }
   &-step {
     position: relative;
     width: 100%;
     max-width: 172px;
     text-align: center;
-    margin: 0 20px;
+    margin: 0 20px 160px;
     @include media-lg {
+      margin-bottom: 50px;
+    }
+    @include media-xl {
       margin: 0 120px;
     }
     &:before {
       content: "";
       position: absolute;
-      top: -28px;
+      top: -45px;
       left: 0;
       width: 100%;
       height: 0;
@@ -185,7 +259,11 @@
       border-radius: 50%;
       border: 1px solid #246EB9;
       opacity: 0.2;
-      transform: scale(2.8);
+      transform: scale(1.4);
+      @include media-xl {
+        top: -28px;
+        transform: scale(2.8);
+      }
     }
     &__name {
       margin-bottom: 33px;

@@ -73,8 +73,8 @@ $(function() {
           const btn = $(this);
           const numModal = btn.attr('href');
           const modal =  $(numModal);
-          modalWrap.removeClass('animated fadeOutUp');
-          modalWrap.addClass('animated fadeInDown');
+          modalWrap.removeClass('fadeOutUp');
+          modalWrap.addClass('fadeInDown');
           modal.removeClass('disabled');
           modal.addClass('flex');
           $('body').addClass('body-modal-open');
@@ -119,7 +119,7 @@ $(function() {
 
     // form
     $('form').submit(function() { 
-        var form = $(this);
+        const form = $(this);
         form.find('.rfield').addClass('empty_field');
 
         // Функция проверки полей формы
@@ -129,41 +129,29 @@ $(function() {
                 // Если поле не пустое удаляем класс-указание
                 $(this).removeClass('empty_field');
                 if (!form.find('.empty_field').length) {
-                    if(form.attr("name") == "podderjka"){
-                        ym(62113519,'reachGoal','callback');
-                    }
-                    if(form.attr("name") == "quiz"){
-                        ym(62113519,'reachGoal','order'); 
-                    }
                     $.ajax({
                         type: "POST",
-                        url: "../mail.php", //Change
+                        url: "../mail.php",
                         data: form.serialize()
                     }).done(function() {
-                        var numModal = form.find('.btn-finish').attr('data-modal');
-                        var modal =  $(numModal);
-                        var modalWrap = $('.modal__wrap');
-                        // modalWrap.removeClass('fadeOutUp');
-                        // modalWrap.addClass('fadeInDown');
-                        modalWrap.removeClass('animated zoomOut');
-                        modalWrap.addClass('animated zoomIn');
+                        const thanksModal =  $('#modalFinish');
+                        const modalWrap = $('.modal__wrap');
+                        modalWrap.removeClass('fadeOutUp');
+                        modalWrap.addClass('fadeInDown');
                         $('.modal').addClass('disabled');
-                        modal.removeClass('disabled');
-                        modal.addClass('flex');
+                        thanksModal.removeClass('disabled');
+                        thanksModal.addClass('flex');
                         $('body').addClass('body-modal-open');
-                        setTimeout(function() {
-                            // Done Functions
-                            // form.trigger("reset");
-                        }, 1000);
+                        form.trigger("reset");
                     });
 
                     $.ajax({
                         method: "POST",
-                        url: "../telegram.php", //Change
+                        url: "../telegram.php",
                         data: form.serialize()
                     }).done(function(){});
                 }
-            } else {}
+            }
         });
 		return false;
     });

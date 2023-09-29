@@ -1,5 +1,11 @@
 .reviews {
-  padding-bottom: 255px;
+  padding-bottom: 100px;
+  @include media-lg {
+    padding-bottom: 155px;
+  }
+  @include media-xl {
+    padding-bottom: 255px;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -20,18 +26,37 @@
     &:before {
       content: "";
       position: absolute;
-      top: -456px;
-      left: -491px;
-      width: 1126px;
-      height: 1152px;
+      bottom: 138px;
+      left: -23%;
+      width: 147%;
+      height: 452px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
       background-image: url('../img/bg/flash-run.webp');
+      @include media-lg {
+        top: -456px;
+        left: -491px;
+        width: 1126px;
+        height: 1152px;
+      }
     }
   }
-  &__item:not(:last-child) {
+  &__item {
     margin-bottom: 20px;
+    text-align: center;
+    img {
+      max-width: 100%;
+      @include media-xl {
+        max-width: initial;
+      }
+    }
+    &:last-child {
+      @include media-lg {
+        margin-bottom: 0;
+      }
+
+    }
   }
   .description {
     text-align: center;

@@ -3,24 +3,47 @@ input {
 	font-family: "SF-Pro-Display", Arial, Helvetica, sans-serif;
 }
 .form {
-  padding-bottom: 160px;
+  padding-bottom: 0;
+  @include media-lg {
+    padding-bottom: 160px;
+  }
   .subtitle {
     max-width: 548px;
     margin-top: 58px;
     margin-bottom: 50px;
     color: #1F1F1F;
     position: relative;
+    @include media-md {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include media-lg {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: -74px;
+    }
+    @include media-xl {
+      margin-top: 58px;
+    }
     &:before {
-      content: "";
-      position: absolute;
-      bottom: 72px;
-      left: 296px;
-      width: 869px;
-      height: 668px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      background-image: url('../img/bg/strange.webp');
+      @include media-lg {
+        content: "";
+        position: absolute;
+        bottom: 182px;
+        left: 196px;
+        width: 479px;
+        height: 368px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url('../img/bg/strange.webp');
+      }
+      @include media-xl {
+        bottom: 72px;
+        left: 296px;
+        width: 869px;
+        height: 668px;
+      }
     }
     .accent-text {
       color: #246EB9;
@@ -70,6 +93,14 @@ input {
     .btn {
       height: 60px;
       padding: 13px 27px;
+    }
+  }
+  &__img {
+    img {
+      max-width: 100%;
+      @include media-xl {
+        max-width: initial;
+      }
     }
   }
 }

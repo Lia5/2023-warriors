@@ -1,6 +1,12 @@
 .advantages {
   margin-top: -100px;
-  padding-bottom: 375px;
+  padding-bottom: 200px;
+  @include media-lg {
+    padding-bottom: 200px;
+  }
+  @include media-xl {
+    padding-bottom: 375px;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -29,12 +35,42 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 87px;
-    margin-bottom: 227px;
+    margin-bottom: 300px;
+    position: relative;
+    @include media-md {
+      margin-bottom: 80px;
+    }
     @include media-lg {
+      margin-bottom: 300px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url('../img/bg/halk.webp');
+      top: auto;
+      top: 107%;
+      right: 0;
+      width: 100%;
+      height: 280px;
+      @include media-md {
+        top: 116%;
+        width: 300px
+      }
+      @include media-lg {
+        content: none
+      }
+    }
+    @include media-lg {
+      margin-bottom: 227px;
       transform: translateX(31px);
     }
     img {
+      max-width: 100%;
       @include media-lg {
+        max-width: initial;
         width: 122%;
       }
     }
@@ -44,50 +80,100 @@
     padding: 13px 27px;
   }
   .divider {
-    bottom: 263px;
+    bottom: 70px;
     transform: translate(-50%, 0) rotate(8.46deg);
+    @include media-lg {
+      bottom: 73px;
+    }
+    @include media-xl {
+      bottom: 263px;
+
+    }
   }
 }
 .counter {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
   margin-bottom: 95px;
   position: relative;
+  @include media-md {
+    margin-bottom: 35px;
+  }
+  @include media-lg {
+    margin-bottom: 95px;
+    margin-top: 0;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
   &:before {
-    content: "";
-    position: absolute;
-    bottom: -151px;
-    right: -714px;
-    width: 932px;
-    height: 995px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url('../img/bg/halk.webp');
+    @include media-lg {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url('../img/bg/halk.webp');
+      top: auto;
+      bottom: 229px;
+      right: -164px;
+      width: 382px;
+      height: 405px;
+    }
+    @include media-xl {
+      bottom: -41px;
+      right: -484px;
+      width: 572px;
+      height: 625px;
+    }
+    @include media-xxl {
+      bottom: -151px;
+      right: -714px;
+      width: 932px;
+      height: 995px;
+
+    }
   }
   &__item {
     width: 100%;
     max-width: 300px;
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
+    line-height: 1.2;
     font-weight: 400;
-    line-height: 32px;
+    margin-bottom: 30px;
+    @include media-lg {
+      font-size: 20px;
+    }
+    @include media-xl {
+      line-height: 32px;
+      font-size: 28px;
+    }
     .accent-color {
       font-weight: 500;
+      padding-right: 10px;
     }
   }
   &__num {
     color: #246EB9;
-    font-size: 90px;
+    font-size: 70px;
     line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 12px;
+    @include media-lg {
+      font-size: 90px;
+    }
   }
   &__plus {
-    font-size: 50px;
+    font-size: 30px;
     position: relative;
-    top: -5px;
+    top: -40px;
+    @include media-lg {
+      font-size: 50px;
+      top: -47px;
+    }
   }
   &__text {
     text-align: center;

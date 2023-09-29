@@ -128,10 +128,10 @@
 }
 #modalSupport {
   .modal__title {
-    font-size: 39px;
+    font-size: 25px;
     letter-spacing: 2px;
-    @media only screen and (max-width: 749px) {
-      font-size: 25px;
+    @include media-lg {
+      font-size: 39px;
     }
   }
 }
@@ -154,7 +154,7 @@
       line-height: 1.2;
       text-align: center;
       margin-bottom: 22px;
-      color: $accent;
+      color: #246EB9;
       font-weight: 700;
     }
     &__mainsubtitle {
