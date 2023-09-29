@@ -17,23 +17,31 @@
     margin: auto;
   }
   &__body {
-    padding: 40px;
+    padding: 45px 25px 25px;
     position: relative;
     border-radius: 47px;
     border: 1px solid #1F1F1F;
     background: #FFF;
     @include media-lg {
+      padding: 40px;
+    }
+    @include media-xxl {
       padding: 113px 140px;
     }
   }
   &__title {
     color: #1F1F1F;
     text-align: center;
-    font-size: 28px;
     font-weight: 700;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 1.4;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @include media-lg {
+      font-size: 28px;
+      line-height: 40px;
+      margin-bottom: 50px;
+    }
     .accent-color {
       padding: 0 10px;
     }
@@ -57,29 +65,45 @@
   }
   &__btn {
     text-align: center;
-    margin-top: 90px;
+    margin-top: 60px;
+    @include media-lg {
+      margin-top: 90px;
+    }
     .btn {
-      padding: 30px 35px;
-      height: 84px;
+      padding: 15px 13px;
+      height: 60px;
+      @include media-lg {
+        padding: 30px 35px;
+        height: 84px;
+      }
     }
   }
 }
 .close {
   position: absolute;
   right: 35px;
-  top: 33px;
-  width: 32px;
-  height: 32px;
+  top: 22px;
+  width: 22px;
+  height: 22px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  svg {
-    fill: #303030;
+  @include media-lg {
+    top: 33px;
     width: 32px;
     height: 32px;
+  }
+  svg {
+    fill: #303030;
+    width: 22px;
+    height: 22px;
     transition: 0.3s;
+    @include media-lg {
+      width: 32px;
+      height: 32px;
+    }
   }
   &:hover {
       svg {
@@ -143,7 +167,10 @@
 #policy {
   .modal__wrap {
     text-align: left;
-    max-width: 80%;
+    max-width: 94%;
+    @include media-lg {
+      max-width: 80%;
+    }
   }
   .modal {
     &__body {
@@ -156,6 +183,7 @@
       margin-bottom: 22px;
       color: #246EB9;
       font-weight: 700;
+      word-break: break-word;
     }
     &__mainsubtitle {
       font-size: 22px;
@@ -163,6 +191,7 @@
       text-align: center;
       margin-bottom: 20px;
       margin-top: 40px;
+      font-weight: 500;
     }
   }
 }

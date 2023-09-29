@@ -51,6 +51,12 @@
         height: 467px;
       }
       @include media-xl {
+        top: 24px;
+        right: 20px;
+        width: 1121px;
+        height: 637px;
+      }
+      @include media-xxl {
         top: -106px;
         right: -80px;
         width: 1531px;
@@ -85,6 +91,9 @@
         line-height: 1.2;
       }
       @include media-xl {
+        font-size: 50px;
+      }
+      @include media-xxl {
         margin-top: 0;
         font-size: 70px;
         line-height: 100px;
@@ -126,7 +135,7 @@
     &__img {
       img {
         max-width: 100%;
-        @include media-xl {
+        @include media-xxl {
           max-width: initial;
         }
       }

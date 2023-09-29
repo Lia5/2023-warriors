@@ -37,10 +37,17 @@
         background-image: url('../img/bg/cap.webp');
       }
       @include media-xl {
+        top: -367px;
+        left: -73px;
+        width: 601px;
+        height: 611px;
+      }
+      @include media-xxl {
         top: -457px;
         left: -73px;
         width: 731px;
         height: 741px;
+
       }
     }
     &--steps {
@@ -84,6 +91,9 @@
     margin-left: auto;
     margin-right: auto;
     @include media-xl {
+      padding: 30px 20px;
+    }
+    @include media-xxl {
       padding: 55px 57px 62px 52px;
     }
     &-wrap {
@@ -146,6 +156,16 @@
       font-size: 17px;
       padding: 10px 15px;
       @include media-lg {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 14px 19px;
+      }
+      @include media-xl {
+        font-size: 19px;
+        line-height: 21px;
+        padding: 10px 12px;
+      }
+      @include media-xxl {
         font-size: 20px;
         line-height: 24px;
         padding: 14px 19px;
@@ -231,7 +251,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    @include media-xl {
+    @include media-xxl {
       flex-wrap: nowrap;
       margin-top: 134px;
     }
@@ -246,6 +266,9 @@
       margin-bottom: 50px;
     }
     @include media-xl {
+      margin: 0 40px;
+    }
+    @include media-xxl {
       margin: 0 120px;
     }
     &:before {
@@ -261,6 +284,9 @@
       opacity: 0.2;
       transform: scale(1.4);
       @include media-xl {
+        transform: scale(1.7);
+      }
+      @include media-xxl {
         top: -28px;
         transform: scale(2.8);
       }

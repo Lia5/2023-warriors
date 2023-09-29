@@ -224,6 +224,9 @@ ul,li {
 		font-size: 68px;
 	}
 	@include media-xl {
+    font-size: 55px;
+	}
+	@include media-xxl {
 		font-size: 90px;
 		line-height: 100px;
 	}
@@ -234,6 +237,9 @@ ul,li {
 			font-size: 100px;
 		}
 		@include media-xl {
+			font-size: 110px;
+		}
+		@include media-xxl {
 			font-size: 140px;
 			line-height: 100px;
 		}
@@ -310,6 +316,9 @@ section {
 	border-top: 2px solid #1F1F1F;
 	border-bottom: 2px solid #1F1F1F;
 	background: #FCFBF8;
+}
+.shadow {
+	box-shadow: 50px 50px 120px 0px rgba(36, 110, 185, 0.60);
 }
 // @import "components/tooltip";
 @import "components/btn";

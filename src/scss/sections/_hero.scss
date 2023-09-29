@@ -1,5 +1,8 @@
 .hero {
   padding-bottom: 460px;
+  @include media-xxl {
+    padding-bottom: 473px;
+  }
   z-index: 1;
   &:before {
     content: "";

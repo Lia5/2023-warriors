@@ -7,6 +7,12 @@ input {
   @include media-lg {
     padding-bottom: 160px;
   }
+  @include media-xl {
+    padding-bottom: 100px;
+  }
+  @include media-xxl {
+    padding-bottom: 160px;
+  }
   .subtitle {
     max-width: 548px;
     margin-top: 58px;
@@ -39,6 +45,12 @@ input {
         background-image: url('../img/bg/strange.webp');
       }
       @include media-xl {
+        bottom: 152px;
+        left: 146px;
+        width: 569px;
+        height: 468px;
+      }
+      @include media-xxl {
         bottom: 72px;
         left: 296px;
         width: 869px;
@@ -98,7 +110,7 @@ input {
   &__img {
     img {
       max-width: 100%;
-      @include media-xl {
+      @include media-xxl {
         max-width: initial;
       }
     }

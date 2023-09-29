@@ -14,8 +14,11 @@
     background-image: url('../img/bg/dots.webp');
   }
   .title {
-    margin-bottom: 130px;
+    margin-bottom: 50px;
     position: relative;
+    @include media-lg {
+      margin-bottom: 130px;
+    }
     &:before {
       @include media-lg {
         content: "";
@@ -30,6 +33,12 @@
         height: 400px;
       }
       @include media-xl {
+        top: -140px;
+        left: 494px;
+        width: 740px;
+        height: 620px;
+      }
+      @include media-xxl {
         top: -290px;
         left: 794px;
         width: 1000px;

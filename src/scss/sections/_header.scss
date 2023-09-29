@@ -62,6 +62,7 @@
   &__adress {
     display: none;
     @include media-lg {
+      color: $text;
       max-width: 260px;
       display: flex;
       align-items: center;
@@ -71,6 +72,9 @@
     }
     @include media-xxl {
       max-width: none;
+    }
+    &:hover {
+      color: $accent;
     }
   }
   &__phone {
