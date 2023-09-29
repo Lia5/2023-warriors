@@ -1,0 +1,38 @@
+.contact {
+  padding-bottom: 142px;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 13px;
+    left: 0;
+    width: 387px;
+    height: 1000px;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url('../img/bg/dots.webp');
+  }
+  .title {
+    margin-top: 110px;
+    justify-content: center;
+  }
+  .description {
+    margin-bottom: 40px;
+    a {
+      color: #1F1F1F;
+      &:hover {
+        color: #FF4986;
+      }
+    }
+  }
+  &__info {
+    margin-top: 70px;
+    margin-left: 35%;
+    max-width: 363px;
+
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+}

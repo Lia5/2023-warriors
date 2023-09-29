@@ -1,0 +1,116 @@
+#modalFinish.modal.disabled
+    .modal__wrap  
+        .close.modal-close
+            svg.icon
+              use(xlink:href="#icon-close")
+        .modal__body
+            .modal__title Дякую!
+#modalGift.modal.disabled
+    .modal__wrap 
+        .close.modal-close
+            svg.icon
+              use(xlink:href="#icon-close")
+        .modal__body
+            .modal__title
+              | Лишайте контакт, щоб отримати подарунок -
+              span.accent-color 150 грн
+              | на наші послуги
+            form(name="gift")
+                // Hidden Required Fields
+                input(type='hidden', name='project_name', value='Warriors')
+                input(type='hidden', name='admin_email', value='liaforweb@gmail.com')
+                input(type='hidden', name='form_subject', value='Отримати подарунок')
+                // END Hidden Required Fields
+                input(type='hidden', name='info', value='Отримати подарунок')
+                .form-line
+                  label
+                    input(type="text" placeholder="номер телефону" name="phone").modal__input.phone-mask
+                .modal__btn(data-modal="#modalFinish")
+                  input(type="submit" value="Отримати подарунок").btn
+#packageMin.modal.disabled
+    .modal__wrap
+        .close.modal-close
+            svg.icon
+              use(xlink:href="#icon-close")
+        .modal__body
+            .modal__title
+              | Лишайте контакт, щоб замовити
+              span.accent-color пакет мініум
+            form(name="gift")
+                // Hidden Required Fields
+                input(type='hidden', name='project_name', value='Warriors')
+                input(type='hidden', name='admin_email', value='liaforweb@gmail.com')
+                input(type='hidden', name='form_subject', value='Замовлення - пакет мініум')
+                // END Hidden Required Fields
+                input(type='hidden', name='info', value='пакет мініум')
+                .form-line
+                  label
+                    input(type="text" placeholder="номер телефону" name="phone").modal__input.phone-mask
+                .modal__btn(data-modal="#modalFinish")
+                  input(type="submit" value="Замовити").btn
+#packageStandart.modal.disabled
+    .modal__wrap
+        .close.modal-close
+            svg.icon
+              use(xlink:href="#icon-close")
+        .modal__body
+            .modal__title
+              | Лишайте контакт, щоб замовити
+              span.accent-color пакет мініум
+            form(name="gift")
+                // Hidden Required Fields
+                input(type='hidden', name='project_name', value='Warriors')
+                input(type='hidden', name='admin_email', value='liaforweb@gmail.com')
+                input(type='hidden', name='form_subject', value='Замовлення - пакет стандарт')
+                // END Hidden Required Fields
+                input(type='hidden', name='info', value='пакет стандарт')
+                .form-line
+                  label
+                    input(type="text" placeholder="номер телефону" name="phone").modal__input.phone-mask
+                .modal__btn(data-modal="#modalFinish")
+                  input(type="submit" value="Замовити").btn
+#packageVip.modal.disabled
+    .modal__wrap
+        .close.modal-close
+            svg.icon
+              use(xlink:href="#icon-close")
+        .modal__body
+            .modal__title
+              | Лишайте контакт, щоб замовити
+              span.accent-color пакет VIP
+            form(name="gift")
+                // Hidden Required Fields
+                input(type='hidden', name='project_name', value='Warriors')
+                input(type='hidden', name='admin_email', value='liaforweb@gmail.com')
+                input(type='hidden', name='form_subject', value='Замовлення - пакет VIP')
+                // END Hidden Required Fields
+                input(type='hidden', name='info', value='пакет VIP')
+                .form-line
+                  label
+                    input(type="text" placeholder="номер телефону" name="phone").modal__input.phone-mask
+                .modal__btn(data-modal="#modalFinish")
+                  input(type="submit" value="Замовити").btn
+#policy.modal.disabled
+    .modal__wrap
+        .close.modal-close
+            svg.icon
+              use(xlink:href="#icon-close")
+        .modal__body
+            .modal__maintitle ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ
+            p Ваша конфіденційність дуже важлива для нас. Ми хочемо, щоб Ваша робота в Інтернет по можливості була максимально приємною і корисною, і Ви абсолютно спокійно використовували найширший спектр інформації, інструментів і можливостей, які пропонує Інтернет.
+            p Особиста інформація Членів, зібрана при реєстрації (або в будь-який інший час) переважно використовується для підготовки Продуктів або Послуг відповідно до Ваших потреб. Ваша інформація не буде передана або продана третім сторонам. Однак ми можемо частково розкривати особисту інформацію в особливих випадках, описаних в «Згоду з розсилкою»
+            .modal__mainsubtitle Які дані збираються на сайті
+            p При добровільної реєстрації на отримання розсилки ви відправляєте своє Ім'я та E-mail через форму реєстрації.
+            .modal__mainsubtitle З якою метою збираються ці дані
+            p Ім'я використовується для звернення особисто до вас, а ваш e-mail для відправки вам листів розсилок, новин, корисних матеріалів, комерційних пропозицій.
+            p Ваші ім'я та e-mail не передаються третім особам, ні за яких умов крім випадків, пов'язаних з виконанням вимог законодавства.
+            p Ви можете відмовитися від отримання листів розсилки і видалити з бази даних свої контактні дані в будь-який момент, клікнувши на посилання для відписки, присутню в кожному листі.
+            .modal__mainsubtitle Як ці дані використовуються
+            p За допомогою цих даних збирається інформація про дії відвідувачів на сайті з метою поліпшення його змісту, поліпшення функціональних можливостей сайту і, як наслідок, створення якісного контенту і сервісів для відвідувачів.
+            p Ви можете в будь-який момент змінити налаштування свого браузера так, щоб браузер блокував всі файли або оповіщає про відправку цих файлів. Врахуйте при цьому, що деякі функції і сервіси не зможуть працювати належним чином.
+            .modal__mainsubtitle Як ці дані захищаються
+            p Для захисту Вашої особистої інформації ми використовуємо різноманітні адміністративні, управлінські та технічні заходи безпеки. Наша Компанія дотримується різних міжнародних стандартів контролю, спрямованих на операції з особистою інформацією, які включають певні заходи контролю щодо захисту інформації, зібраної в Інтернет.
+            p Наших співробітників навчають розуміти і виконувати ці заходи контролю, вони ознайомлені з нашим Повідомленням про конфіденційність, норм та інструкцій.
+            p Проте, незважаючи на те, що ми прагнемо убезпечити Вашу особисту інформацію, Ви теж повинні вживати заходів, щоб захистити її.
+            p Ми настійно рекомендуємо Вам вживати всіх можливих заходів обережності під час перебування в Інтернеті. Організовані нами послуги і веб-сайти передбачають заходи щодо захисту від витоку, несанкціонованого використання і зміни інформації, яку ми контролюємо. Незважаючи на те, що ми робимо все можливе, щоб забезпечити цілісність і безпеку своєї мережі і систем, ми не можемо гарантувати, що наші заходи безпеки допоможуть запобігти незаконний доступ до цієї інформації хакерів сторонніх організацій.
+            p В разі зміни цієї політики конфіденційності ви зможете прочитати про ці зміни на цій сторінці або, в особливих випадках, отримати повідомлення на свій e-mail.

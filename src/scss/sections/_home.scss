@@ -1,0 +1,55 @@
+.home {
+  padding-top: 147px;
+  padding-bottom: 145px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 387px;
+    height: 1000px;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url('../img/bg/dots.webp');
+  }
+  &__description {
+    max-width: 320px;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    margin: 0 auto;
+    @include media-lg {
+      max-width: 308px;
+      font-size: 24px;
+      line-height: 28px;
+      margin: 0;
+    }
+  }
+  &__text {
+    font-weight: 300;
+    margin-bottom: 20px;
+    @include media-lg {
+      margin-top: -90px;
+    }
+  }
+  &__location {
+    display: flex;
+    align-items: center;
+    color: #246EB9;
+    font-weight: 500;
+    .icon {
+      width: 18px;
+      height: 21px;
+      margin-right: 11px;
+      fill: #246EB9;
+    }
+  }
+  &__btn {
+    max-width: 350px;
+    margin: 47px auto 0;
+    text-align: center;
+    .btn {
+      padding: 30px 35px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+header.header
+  .container
+    .row
+      .col-6.col-xl-2
+        .header__logo
+          .header__logo-name Warriors
+          .header__logo-company Entertainment center
+      .col-6.col-xl-10.header__contact
+        .header__adress
+          svg.icon
+            use(xlink:href="#icon-place")
+          | М.Київ вул. Новоконстантинівська 15
+        a(href="tel:+380000000000").header__phone
+          svg.icon
+            use(xlink:href="#icon-phone")
+          | +38(000) 000 00 00
+        a(href="#modalGift").header__btn.btn.modal-open Зв'яжіться зі мною

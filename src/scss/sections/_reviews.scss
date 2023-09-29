@@ -1,0 +1,51 @@
+.reviews {
+  padding-bottom: 255px;
+  &:before {
+    content: "";
+    position: absolute;
+    transform: scale(-1);
+    bottom: -180px;
+    right: 0;
+    width: 387px;
+    height: 1000px;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url('../img/bg/dots.webp');
+  }
+  .title {
+    justify-content: center;
+    margin-bottom: 80px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: -456px;
+      left: -491px;
+      width: 1126px;
+      height: 1152px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url('../img/bg/flash-run.webp');
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .description {
+    text-align: center;
+  }
+  &__btn {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    .btn {
+      height: 60px;
+    }
+  }
+  .divider {
+    bottom: 80px;
+    transform: translate(-50%, 0) rotate(8.46deg);
+  }
+}

@@ -1,0 +1,77 @@
+.emotions {
+  padding-bottom: 227px;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 48px;
+    left: 0;
+    width: 387px;
+    height: 1000px;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url('../img/bg/dots.webp');
+  }
+  .title {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    justify-content: flex-end;
+  }
+  .description {
+    @include media-lg {
+      margin-left: 44%;
+      max-width: 396px;
+    }
+  }
+  &__description {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: -106px;
+      right: -80px;
+      width: 1531px;
+      height: 947px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url('../img/bg/flash.webp');
+    }
+  }
+  &-tabs {
+    display: flex;
+    margin-top: 180px;
+    &__caption {
+      font-size: 70px;
+      font-weight: 600;
+      line-height: 100px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      li {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 15px;
+      }
+    }
+    &__number {
+      font-size: 20px;
+      line-height: 1;
+      margin-right: 14px;
+      padding-bottom: 5px;
+    }
+    &__contents {
+      margin-top: 25px;
+    }
+    .text {
+      margin-top: 55px;
+      @include media-lg {
+        margin-left: 20%;
+        max-width: 325px;
+      }
+    }
+  }
+  .divider {
+    bottom: 106px;
+    transform: translate(-50%, 0) rotate(-8.46deg);
+  }
+}

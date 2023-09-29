@@ -1,0 +1,12 @@
+@import "_mixins/font-face";
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&family=Raleway:wght@400;600&display=swap');
+
+
+@include font-face("SF-Pro-Display", "../fonts/SF-Pro-Display-Light/SF-Pro-Display-Light", 300);
+@include font-face("SF-Pro-Display", "../fonts/SF-Pro-Display-Regular/SF-Pro-Display-Regular", 400);
+@include font-face("SF-Pro-Display", "../fonts/SF-Pro-Display-Medium/SF-Pro-Display-Medium", 500);
+@include font-face("SF-Pro-Display", "../fonts/SF-Pro-Display-SemiBold/SF-Pro-Display-SemiBold", 600);
+@include font-face("SF-Pro-Display", "../fonts/SF-Pro-Display-Bold/SF-Pro-Display-Bold", 700);
+@include font-face("SF-Pro-Display", "../fonts/SF-Pro-Display-Heavy/SF-Pro-Display-Heavy", 800);
+@include font-face("Comforter", "../fonts/Comforter-Regular/Comforter-Regular", 400);
