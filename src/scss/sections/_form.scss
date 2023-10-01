@@ -43,6 +43,7 @@ input {
         background-position: center;
         background-size: contain;
         background-image: url('../img/bg/strange.webp');
+        pointer-events: none;
       }
       @include media-xl {
         bottom: 152px;

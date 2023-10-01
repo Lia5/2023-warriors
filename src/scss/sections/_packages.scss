@@ -17,6 +17,7 @@
     background-position: center;
     background-size: contain;
     background-image: url('../img/bg/dots.webp');
+		pointer-events: none;
   }
   .title {
     flex-direction: column;
@@ -37,6 +38,7 @@
         background-position: center;
         background-size: contain;
         background-image: url('../img/bg/cap.webp');
+        pointer-events: none;
       }
       @include media-xl {
         top: -367px;
@@ -66,6 +68,7 @@
         background-position: center;
         background-size: contain;
         background-image: url('../img/bg/cat.webp');
+        pointer-events: none;
         @include media-lg {
           bottom: 73px;
           right: -180px;
@@ -359,6 +362,7 @@
         border: 1px solid #246EB9;
         opacity: 0.2;
         transform: scale(1.4);
+        pointer-events: none;
         @include media-md {
           top: -45px;
           transform: scale(1.7);

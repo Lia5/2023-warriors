@@ -180,6 +180,7 @@ ul,li {
 		background-position: center;
 		background-size: contain;
 		background-image: url('../img/bg/sp-woman.webp');
+		pointer-events: none;
 		@include media-sm {
 			top: -252px;
 			right: -151px;
@@ -225,6 +226,7 @@ ul,li {
 		background-position: center;
 		background-size: contain;
 		background-image: url('../img/bg/spider.webp');
+		pointer-events: none;
 		@include media-md {
 			bottom: -178px;
 			right: 300px;

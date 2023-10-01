@@ -22,6 +22,7 @@
     background-position: center;
     background-size: contain;
     background-image: url('../img/bg/dots.webp');
+		pointer-events: none;
   }
   .title {
     position: relative;
@@ -59,6 +60,7 @@
         background-position: center;
         background-size: contain;
         background-image: url('../img/bg/sp-man.webp');
+        pointer-events: none;
         z-index: -1;
       }
       @include media-xl {
@@ -145,6 +147,7 @@
       background-size: contain;
       background-image: url('../img/bg/spider-red.webp');
       z-index: -1;
+      pointer-events: none;
       @include media-md {
         top: 890px;
       }
@@ -209,7 +212,7 @@
 	display: flex;
 	align-items: center;
 	height: 60px;
-	font-size: 40px;
+	font-size: 29px;
 	font-weight: 500;
 	line-height: 1;
 	letter-spacing: 2px;
@@ -221,6 +224,7 @@
   transform: translate(-50%, 0);
 
   @include media-md {
+    font-size: 40px;
     top: 53px;
   }
   @include media-lg {

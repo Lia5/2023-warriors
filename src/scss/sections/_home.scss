@@ -20,6 +20,7 @@
     background-position: center;
     background-size: contain;
     background-image: url('../img/bg/dots.webp');
+		pointer-events: none;
   }
   &__title {
     max-width: 350px;
