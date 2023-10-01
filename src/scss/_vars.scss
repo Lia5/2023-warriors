@@ -23,6 +23,11 @@
         @content;
     }
 }
+@mixin media-3xl {
+    @media (min-width: #{1640px}) {
+        @content;
+    }
+}
 
 $white: #ffffff;
 $bg: #FAF9F8;

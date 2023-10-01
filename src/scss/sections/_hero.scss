@@ -1,5 +1,12 @@
 .hero {
+  padding-top: 100px;
   padding-bottom: 460px;
+  @include media-md {
+    padding-top: 150px;
+  }
+  @include media-lg {
+    padding-top: 0;
+  }
   @include media-xxl {
     padding-bottom: 473px;
   }
@@ -86,6 +93,8 @@
     }
   }
   &__qwester {
+    position: relative;
+    z-index: 1;
     @include media-lg {
       margin-top: -210px;
     }
@@ -99,9 +108,6 @@
   .description {
     max-width: 496px;
     letter-spacing: 1.4px;
-    @include media-lg {
-      margin-top: -100px;
-    }
     p {
       margin-top: 0;
     }
@@ -155,24 +161,20 @@
         height: 718px;
       }
       @include media-xxl {
-        width: 1251px;
-        top: 216px;
-        right: -345px;
-        height: 1031px;
+        width: 1011px;
+        top: 416px;
+        right: -245px;
+        height: 731px;
 
       }
     }
   }
   &__subtitle {
     @include media-lg {
-      margin-top: -100px;
       margin-bottom: 30px;
     }
-    @include media-xl {
-      margin-top: -0;
-    }
-    @include media-xxl {
-      margin-top: -312px;
+    @include media-3xl {
+      margin-top: -180px;
     }
   }
   .subtitle {
@@ -203,7 +205,7 @@
 
 .line {
   position: absolute;
-  top: 440px;
+  top: 0;
 	display: flex;
 	align-items: center;
 	height: 60px;
@@ -216,15 +218,13 @@
 	border: 1px solid #1F1F1F;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, 0) rotate(-18.07deg);
+  transform: translate(-50%, 0);
 
-  @include media-sm {
-    top: 640px;
-  }
   @include media-md {
-    top: 770px;
+    top: 53px;
   }
   @include media-lg {
+    transform: translate(-50%, 0) rotate(-18.07deg);
     top: 290px;
   }
 	.icon {
@@ -234,18 +234,23 @@
 		margin: 0 10px;
 	}
 	&--white {
-    top: 490px;
-    transform: translate(-50%, 0) rotate(-7.636deg);
+    top: 570px;
 		background: #FFF;
     border-color: #fff;
+    z-index: 1;
     @include media-sm {
       top: 695px;
     }
     @include media-md {
-      top: 795px;
+      top: 935px;
     }
     @include media-lg {
+      transform: translate(-50%, 0) rotate(-7.636deg);
+      top: 159px;
+    }
+    @include media-xl {
       top: 250px;
+
     }
 	}
 }

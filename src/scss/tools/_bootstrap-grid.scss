@@ -51,11 +51,11 @@ html {
   }
 }
 
-// @media only screen and (min-width: 1400px) {
-//   .container {
-//     max-width: 1400px;
-//   }
-// }
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
 @media only screen and (min-width: 1640px) {
   .container {
     max-width: 1660px;

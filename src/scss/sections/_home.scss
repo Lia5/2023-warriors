@@ -1,7 +1,8 @@
 .home {
-  padding-top: 200px;
+  padding-top: 250px;
   padding-bottom: 240px;
   @include media-md {
+    padding-top: 300px;
     padding-bottom: 0;
   }
   @include media-lg {
@@ -19,6 +20,16 @@
     background-position: center;
     background-size: contain;
     background-image: url('../img/bg/dots.webp');
+  }
+  &__title {
+    max-width: 350px;
+    margin: 0 auto;
+    @include media-sm {
+      max-width: 560px;
+    }
+    @include media-lg {
+      max-width: none;
+    }
   }
   &__description {
     max-width: 320px;

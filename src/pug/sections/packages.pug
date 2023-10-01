@@ -50,14 +50,22 @@ section.packages#packages
               span Тривалiсть:
               span.accent-color 3,5 години
             div Вартість до 10 чоловік:
-            .packages-item__choices
-              span.active Опція 1
-              span / Опція 2
-            .packages-item__price 11000 грн
-            .packages-item__details
-              | (Для 6-ти осіб -
-              span 6600 грн
-              | )
+            .packages-item__choices.tabs
+              ul.tabs__caption
+                li.active Опція 1
+                li / Опція 2
+              .tabs__content.active
+                .packages-item__price 11000 грн
+                .packages-item__details
+                  | (Для 6-ти осіб -
+                  span 6600 грн
+                  | )
+              .tabs__content
+                .packages-item__price 10000 грн
+                .packages-item__details
+                  | (Для 6-ти осіб -
+                  span 6600 грн
+                  | )
           .packages-item__btn
             a(href="#packageStandart").btn.modal-open Обрати
       .col-12.col-xl-4.packages-item-wrap

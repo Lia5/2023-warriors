@@ -207,7 +207,14 @@
       font-size: 20px;
       font-weight: 500;
       line-height: 34px;
-      span.active {
+      .tabs__caption {
+        display: flex;
+        justify-content: flex-end;
+      }
+      li+li {
+        margin-left: 10px;
+      }
+      li.active, li:hover {
         color: #1F1F1F;
       }
     }
