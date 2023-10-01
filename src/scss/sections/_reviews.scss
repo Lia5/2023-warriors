@@ -54,16 +54,21 @@
       }
     }
   }
+  &__items {
+
+  }
   &__item {
     margin-bottom: 20px;
     text-align: center;
+    @include media-lg {
+      margin-bottom: 20px;
+    }
     img {
+      width: 100%;
       max-width: 100%;
-      @include media-xxl {
-        max-width: initial;
-      }
     }
     &:last-child {
+      margin-bottom: 0;
       @include media-lg {
         margin-bottom: 0;
       }
@@ -84,5 +89,11 @@
   .divider {
     bottom: 80px;
     transform: translate(-50%, 0) rotate(8.46deg);
+  }
+  .slick-dots {
+    display: flex;
+    @include media-xxl {
+      display: none;
+    }
   }
 }

@@ -1,6 +1,7 @@
 
 @import "tools/_normalize.scss";
 @import "tools/_bootstrap-grid.scss";
+@import "tools/_slick";
 @import "vars";
 @import "fonts";
 
@@ -315,7 +316,7 @@ ul,li {
 	}
 }
 .text {
-	font-size: 14px;
+	font-size: 17px;
 	font-weight: 300;
 	line-height: 1.2;
 	@include media-lg {
@@ -355,6 +356,7 @@ section {
 @import "components/marquee";
 @import "components/tabs";
 @import "components/accordeon";
+@import "components/custom-slick";
 
 @import "sections/header";
 @import "sections/home";

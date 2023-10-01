@@ -5,97 +5,101 @@ section.packages#packages
         .title 
           span Пакети
           span.accent-text святкування
-      .col-12.col-xl-4.packages-item-wrap
-        .packages-item
-          .packages-item__name
-            | Пакет
-            br
-            | Мінімум
-          .packages-item__options
-            .packages-item__line
-              span.packages-item__option.packages-item__option--yellow Пейнтбол або Лазертаг
-              span.accent-color - 1 година
-            .packages-item__line
-              span.packages-item__option.packages-item__option--green Банкетна зала
-              span.accent-color - 1 година
-          .packages-item__description
-            div
-              span Тривалiсть:
-              span.accent-color 2 години
-            div Вартість для компанії до 10 учасників:
-            .packages-item__price 5 000 грн
-          .packages-item__btn
-            a(href="#packageMin").btn.modal-open Обрати
-      .col-12.col-xl-4.packages-item-wrap
-        .packages-item
-          .packages-item__name
-            | Пакет
-            br
-            | Стандарт
-          .packages-item__options
-            div.accent-color Опція 1
-            .packages-item__group
-              span.packages-item__option.packages-item__option--yellow Пейнтбол безлім
-              span.packages-item__option.packages-item__option--red Лазертаг безлім
-              span.packages-item__option.packages-item__option--blue Квест=11000
-              span.packages-item__option.packages-item__option--green Банкетна зала
-            div.accent-color Опція 2
-            .packages-item__group
-              span.packages-item__option.packages-item__option--yellow Лазертаг
-              span.packages-item__option.packages-item__option--blue Квест
-              span.packages-item__option.packages-item__option--violet Паперове шоу
-              span.packages-item__option.packages-item__option--green Дискотека
-          .packages-item__description
-            div
-              span Тривалiсть:
-              span.accent-color 3,5 години
-            div Вартість до 10 чоловік:
-            .packages-item__choices.tabs
-              ul.tabs__caption
-                li.active Опція 1
-                li / Опція 2
-              .tabs__content.active
-                .packages-item__price 11000 грн
-                .packages-item__details
-                  | (Для 6-ти осіб -
-                  span 6600 грн
-                  | )
-              .tabs__content
-                .packages-item__price 10000 грн
-                .packages-item__details
-                  | (Для 6-ти осіб -
-                  span 6600 грн
-                  | )
-          .packages-item__btn
-            a(href="#packageStandart").btn.modal-open Обрати
-      .col-12.col-xl-4.packages-item-wrap
-        .packages-item
-          .packages-item__name
-            | Пакет
-            br
-            | VIP
-          .packages-item__options
-            .packages-item__group
-              span.packages-item__option.packages-item__option--yellow Пейнтбол безлім
-              span.packages-item__option.packages-item__option--green Банкетна зала
-              span.packages-item__option.packages-item__option--red Лазертаг безлім
-              span.packages-item__option.packages-item__option--blue Квест
-              span.packages-item__option.packages-item__option--violet Паперове шоу
-              span.packages-item__option.packages-item__option--green Костюмований ведучий
-          .packages-item__description
-            div
-              span Тривалiсть:
-              span.accent-color 5 годин
-            div Вартість до 10 чоловiк:
-            .packages-item__price 15 000 грн
-          .packages-item__btn
-            a(href="#packageVip").btn.modal-open Обрати
+      .col-12
+        .packages-items
+          .packages-item-wrap
+            .packages-item
+              .packages-item__name
+                | Пакет
+                br
+                | Мінімум
+              .packages-item__options
+                .packages-item__line
+                  span.packages-item__option.packages-item__option--yellow Пейнтбол або Лазертаг
+                  span.accent-color - 1 година
+                .packages-item__line
+                  span.packages-item__option.packages-item__option--green Банкетна зала
+                  span.accent-color - 1 година
+              .packages-item__description
+                div
+                  span Тривалiсть:
+                  span.accent-color 2 години
+                div Вартість для компанії до 10 учасників:
+                .packages-item__price 5 000 грн
+              .packages-item__btn
+                a(href="#packageMin").btn.modal-open Обрати
+          .packages-item-wrap
+            .packages-item
+              .packages-item__name
+                | Пакет
+                br
+                | Стандарт
+              .packages-item__options
+                div.accent-color Опція 1
+                .packages-item__group
+                  span.packages-item__option.packages-item__option--yellow Пейнтбол безлім
+                  span.packages-item__option.packages-item__option--red Лазертаг безлім
+                  span.packages-item__option.packages-item__option--blue Квест=11000
+                  span.packages-item__option.packages-item__option--green Банкетна зала
+                div.accent-color Опція 2
+                .packages-item__group
+                  span.packages-item__option.packages-item__option--yellow Лазертаг
+                  span.packages-item__option.packages-item__option--blue Квест
+                  span.packages-item__option.packages-item__option--violet Паперове шоу
+                  span.packages-item__option.packages-item__option--green Дискотека
+              .packages-item__description
+                div
+                  span Тривалiсть:
+                  span.accent-color 3,5 години
+                div Вартість до 10 чоловік:
+                .packages-item__choices.tabs
+                  ul.tabs__caption
+                    li.active Опція 1
+                    li / Опція 2
+                  .tabs__content.active
+                    .packages-item__price 11000 грн
+                    .packages-item__details
+                      | (Для 6-ти осіб -
+                      span 6600 грн
+                      | )
+                  .tabs__content
+                    .packages-item__price 10000 грн
+                    .packages-item__details
+                      | (Для 6-ти осіб -
+                      span 6600 грн
+                      | )
+              .packages-item__btn
+                a(href="#packageStandart").btn.modal-open Обрати
+          .packages-item-wrap
+            .packages-item
+              .packages-item__name
+                | Пакет
+                br
+                | VIP
+              .packages-item__options
+                .packages-item__group
+                  span.packages-item__option.packages-item__option--yellow Пейнтбол безлім
+                  span.packages-item__option.packages-item__option--green Банкетна зала
+                  span.packages-item__option.packages-item__option--red Лазертаг безлім
+                  span.packages-item__option.packages-item__option--blue Квест
+                  span.packages-item__option.packages-item__option--violet Паперове шоу
+                  span.packages-item__option.packages-item__option--green Костюмований ведучий
+              .packages-item__description
+                div
+                  span Тривалiсть:
+                  span.accent-color 5 годин
+                div Вартість до 10 чоловiк:
+                .packages-item__price 15 000 грн
+              .packages-item__btn
+                a(href="#packageVip").btn.modal-open Обрати
       .col-12.offset-lg-4.col-lg-4.packages__description
         .description Під час свята на території закладу не буде нікого із сторонніх людей. Це день лише для вас!
       .col-12
         .title.title--steps
           span Як замовити
           span.accent-text свято?
+  .container.no-container-mob
+    .row
       .col-12
         .packages__steps
           .packages-step

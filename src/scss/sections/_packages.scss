@@ -1,5 +1,5 @@
 .packages {
-  padding-bottom: 400px;
+  padding-bottom: 480px;
   @include media-lg {
     padding-bottom: 300px;
   }
@@ -21,8 +21,10 @@
   .title {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 80px;
     position: relative;
+    @include media-lg {
+      margin-bottom: 80px;
+    }
     &:before {
       @include media-lg {
         content: "";
@@ -79,17 +81,37 @@
       }
     }
   }
+  &-items {
+    margin-left: -15px;
+    margin-right: -15px;
+    width: calc(100% + 30px);
+    .slick-dots {
+      @include media-xl {
+        display: none;
+      }
+    }
+    .slick-track {
+      display: flex;
+    }
+    .slick-slide {
+      height: auto;
+    }
+  }
   &-item {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 20px;
+    padding: 20px 10px;
     border-radius: 40px;
     border: 2px solid #1F1F1F;
     background: #FFF;
-    max-width: 527px;
+    max-width: 427px;
     margin-left: auto;
     margin-right: auto;
+    @include media-md {
+      padding: 20px;
+      max-width: 527px;
+    }
     @include media-xl {
       padding: 30px 20px;
     }
@@ -97,10 +119,8 @@
       padding: 55px 57px 62px 52px;
     }
     &-wrap {
-      margin-bottom: 30px;
-      @include media-xl {
-        margin-bottom: 0;
-      }
+      padding-right: 15px;
+      padding-left: 15px;
     }
     &__name {
       padding-left: 10px;
@@ -118,6 +138,7 @@
       display: flex;
       flex-direction: column-reverse;
       flex-wrap: wrap;
+      align-items: flex-start;
       @include media-lg {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -138,7 +159,10 @@
       }
     }
     &__options {
-      margin-bottom: 42px;
+      margin-bottom: 10px;
+      @include media-lg {
+        margin-bottom: 42px;
+      }
       div.accent-color {
         margin-top: -4px;
         margin-bottom: 6px;
@@ -151,10 +175,16 @@
       font-weight: 500;
       line-height: 1.2;
       border-radius: 50px;
-      margin-bottom: 8px;
-      margin-right: 8px;
-      font-size: 17px;
-      padding: 10px 15px;
+      margin-bottom: 6px;
+      margin-right: 4px;
+      font-size: 15px;
+      padding: 5px 7px;
+      // @include media-md {
+      //   margin-bottom: 8px;
+      //   margin-right: 8px;
+      //   font-size: 17px;
+      //   padding: 10px 15px;
+      // }
       @include media-lg {
         font-size: 20px;
         line-height: 24px;
@@ -189,9 +219,12 @@
     &__description {
       margin-top: auto;
       text-align: right;
-      font-size: 23px;
+      font-size: 18px;
       font-weight: 400;
       line-height: 1.4;
+      @include media-lg {
+        font-size: 23px;
+      }
       @include media-xl {
         font-size: 28px;
         line-height: 40px;
@@ -204,9 +237,13 @@
       margin-top: 5px;
       margin-bottom: 15px;
       color: #A6A6A6;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 500;
-      line-height: 34px;
+      line-height: 1.2;
+      @include media-md {
+        font-size: 20px;
+        line-height: 34px;
+      }
       .tabs__caption {
         display: flex;
         justify-content: flex-end;
@@ -224,6 +261,7 @@
       font-weight: 700;
       line-height: 40px;
       text-transform: uppercase;
+      color: #1F1F1F;
     }
     &__details {
       color: #585858;
@@ -262,15 +300,35 @@
       flex-wrap: nowrap;
       margin-top: 134px;
     }
+    .slick-list {
+      overflow: hidden;
+      padding: 100px 0 0;
+      @include media-lg {
+        overflow: visible;
+        padding: 0;
+      }
+    }
+    .slick-dots {
+      display: flex;
+      @include media-lg {
+        display: none;
+      }
+    }
   }
   &-step {
     position: relative;
     width: 100%;
-    max-width: 172px;
+    // max-width: 172px;
     text-align: center;
-    margin: 0 20px 160px;
+    margin: 0 50px 160px;
+    @include media-sm {
+      margin: 0 25px 160px;
+    }
+    @include media-md {
+      margin: 0 35px 160px;
+    }
     @include media-lg {
-      margin-bottom: 50px;
+      margin: 0 20px 50px;
     }
     @include media-xl {
       margin: 0 40px;
@@ -278,50 +336,68 @@
     @include media-xxl {
       margin: 0 120px;
     }
-    &:before {
-      content: "";
-      position: absolute;
-      top: -45px;
-      left: 0;
-      width: 100%;
-      height: 0;
-      padding-bottom: 100%;
-      border-radius: 50%;
-      border: 1px solid #246EB9;
-      opacity: 0.2;
-      transform: scale(1.4);
-      @include media-xl {
-        transform: scale(1.7);
-      }
-      @include media-xxl {
-        top: -28px;
-        transform: scale(2.8);
-      }
-    }
     &__name {
+      position: relative;
+      max-width: 220px;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 33px;
       font-size: 64px;
       font-style: normal;
       font-weight: 400;
       line-height: 40px;
       white-space: nowrap;
+      &:before {
+        content: "";
+        position: absolute;
+        top: -55px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+        border-radius: 50%;
+        border: 1px solid #246EB9;
+        opacity: 0.2;
+        transform: scale(1.4);
+        @include media-md {
+          top: -45px;
+          transform: scale(1.7);
+        }
+        @include media-md {
+          transform: scale(1.5);
+        }
+        @include media-lg {
+          transform: scale(1.4);
+        }
+        @include media-xl {
+          transform: scale(1.7);
+        }
+        @include media-xxl {
+          top: -28px;
+          transform: scale(2.8);
+        }
+      }
     }
-    &:nth-child(1) {
+    &__text {
+      max-width: 250px;
+      margin: 0 auto;
+    }
+    &:nth-child(4n+1) {
       .packages-step__name {
         color: #246EB9;
       }
     }
-    &:nth-child(2) {
+    &:nth-child(4n+2) {
       .packages-step__name {
         color: #2EA91B;
       }
     }
-    &:nth-child(3) {
+    &:nth-child(4n+3) {
       .packages-step__name {
         color: #FF4621;
       }
     }
-    &:nth-child(4) {
+    &:nth-child(4n+4) {
       .packages-step__name {
         color: #92779A;
       }
@@ -330,5 +406,24 @@
   .divider {
     bottom: 80px;
     transform: translate(-50%, 0) rotate(-8.46deg);
+  }
+  .no-container-mob {
+    max-width: none;
+    padding: 0;
+    @include media-sm {
+      max-width: none;
+    }
+    @include media-lg {
+      max-width: 960px;
+    }
+    @include media-xl {
+      max-width: 1200px;
+    }
+    @include media-xxl {
+      max-width: 1400px;
+    }
+    @include media-3xl {
+      max-width: 1660px;
+    }
   }
 }

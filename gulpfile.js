@@ -38,6 +38,7 @@ gulp.task('styles', function() {
 gulp.task('js', function() {
 	return gulp.src([
 		'src/libs/jquery/jquery.min.js',
+		'src/libs/slick/slick.min.js',
 		'src/libs/mask/jquery.maskedinput.min.js',
 		'src/js/custom.js', // Always at the end
 		])

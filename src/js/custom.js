@@ -36,6 +36,93 @@ $(function() {
         }
     });
 
+    $('.packages-items').slick({
+        slidesToShow: 3,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+    $('.packages__steps').slick({
+        slidesToShow: 4,
+        dots: true,
+        arrows: false,
+        infinite: false,
+        speed: 300,
+        slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+    $('.reviews__items').slick({
+        slidesToShow: 4,
+        dots: true,
+        arrows: false,
+        infinite: false,
+        speed: 300,
+        slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
     if($('.accordeon').length) {
         var contents = $('.accordeon-content');
         var titles = $('.accordeon-title');
