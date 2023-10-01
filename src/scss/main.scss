@@ -338,6 +338,9 @@ section {
 	@include media-lg {
 		padding: 40px 0
 	}
+	img {
+		height: auto;
+	}
 }
 .divider {
 	position: absolute;
