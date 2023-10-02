@@ -15,21 +15,27 @@
   display: flex;
   width: fit-content;
   align-items: center;
-  height: 60px;
+  height: 40px;
   white-space: nowrap;
   animation: marquee-anim 20s linear infinite;
   cursor: pointer;
   padding: 0;
+  @include media-4xl {
+    height: 60px;
+  }
 }
 .marquee__item--copy {
   display: flex;
   width: fit-content;
   align-items: center;
-  height: 60px;
+  height: 40px;
   padding: 0;
   position: absolute;
   top: 0;
   animation: marquee-anim2 20s linear infinite;
+  @include media-4xl {
+    height: 60px;
+  }
 }
 // .marquee:hover .marquee__item {
 //   animation-play-state: paused;

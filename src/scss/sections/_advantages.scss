@@ -5,6 +5,9 @@
     padding-bottom: 200px;
   }
   @include media-xl {
+    padding-bottom: 259px;
+  }
+  @include media-4xl {
     padding-bottom: 375px;
   }
   &:before {
@@ -21,6 +24,44 @@
     background-image: url('../img/bg/dots.webp');
 		pointer-events: none;
   }
+  .title {
+    font-size: 40px;
+    position: relative;
+    z-index: 1;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 140px;
+      right: -6%;
+      width: 360px;
+      height: 431px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url('../img/bg/spider-red.webp');
+      z-index: -1;
+      pointer-events: none;
+      @include media-sm {
+        bottom: 40px;
+        right: 0%;
+        width: 530px;
+        height: 431px;
+      }
+      @include media-md {
+        content: none;
+      }
+    }
+    @include media-xl {
+      font-size: 67px;
+    }
+    .accent-text {
+      font-size: 70px;
+      @include media-xl {
+        font-size: 110px;
+        line-height: 50px;
+      }
+    }
+  }
   &__btn {
     text-align: center;
   }
@@ -29,6 +70,9 @@
     margin-bottom: 46px;
     max-width: 360px;
     @include media-xxl {
+      margin-top: 20px;
+    }
+    @include media-4xl {
       margin-top: 6px;
     }
   }
@@ -49,6 +93,9 @@
       transform: translateX(31px);
     }
     @include media-xxl {
+      margin-bottom: 156px;
+    }
+    @include media-4xl {
       margin-bottom: 217px;
     }
     &:before {
@@ -81,8 +128,12 @@
     }
   }
   .btn {
-    height: 60px;
-    padding: 13px 27px;
+    height: 46px;
+    padding: 10px 21px;
+    @include media-4xl {
+      height: 60px;
+      padding: 13px 27px;
+    }
   }
   .divider {
     bottom: 70px;
@@ -91,8 +142,13 @@
       bottom: 73px;
     }
     @include media-xl {
+      bottom: 293px;
+    }
+    @include media-xxl {
+      bottom: 181px;
+    }
+    @include media-4xl {
       bottom: 263px;
-
     }
   }
 }
@@ -137,11 +193,16 @@
       height: 545px;
     }
     @include media-xxl {
+      bottom: -96px;
+      right: -528px;
+      width: 692px;
+      height: 725px;
+    }
+    @include media-4xl {
       bottom: -126px;
       right: -714px;
       width: 932px;
       height: 995px;
-
     }
   }
   &__item {
@@ -154,8 +215,11 @@
     margin-bottom: 30px;
     @include media-lg {
       font-size: 20px;
+      line-height: 23px;
+      max-width: 210px;
+      margin-bottom: 0;
     }
-    @include media-xl {
+    @include media-4xl {
       line-height: 32px;
       font-size: 28px;
     }
@@ -172,6 +236,9 @@
     text-transform: uppercase;
     margin-bottom: 12px;
     @include media-lg {
+      font-size: 69px;
+    }
+    @include media-4xl {
       font-size: 90px;
     }
   }
@@ -179,7 +246,12 @@
     font-size: 30px;
     position: relative;
     top: -40px;
+    font-weight: 800;
     @include media-lg {
+      font-size: 35px;
+      top: -37px;
+    }
+    @include media-4xl {
       font-size: 50px;
       top: -47px;
     }

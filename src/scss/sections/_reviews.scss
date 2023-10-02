@@ -4,6 +4,9 @@
     padding-bottom: 155px;
   }
   @include media-xl {
+    padding-bottom: 174px;
+  }
+  @include media-4xl {
     padding-bottom: 255px;
   }
   &:before {
@@ -22,8 +25,11 @@
   }
   .title {
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 63px;
     position: relative;
+    @include media-4xl {
+      margin-bottom: 80px;
+    }
     &:before {
       content: "";
       position: absolute;
@@ -49,15 +55,18 @@
         height: 892px;
       }
       @include media-xxl {
+        top: -336px;
+        left: -381px;
+        width: 856px;
+        height: 862px;
+      }
+      @include media-4xl {
         top: -456px;
         left: -491px;
         width: 1126px;
         height: 1152px;
       }
     }
-  }
-  &__items {
-
   }
   &__item {
     margin-bottom: 20px;
@@ -83,9 +92,9 @@
   &__btn {
     text-align: center;
     margin-top: 70px;
-    margin-bottom: 50px;
-    .btn {
-      height: 60px;
+    margin-bottom: 35px;
+    @include media-4xl {
+      margin-bottom: 50px;
     }
   }
   .divider {

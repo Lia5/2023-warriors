@@ -1,5 +1,11 @@
 .emotions {
   padding-bottom: 227px;
+  @include media-lg {
+    padding-bottom: 165px;
+  }
+  @include media-4xl {
+    padding-bottom: 147px;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -28,7 +34,7 @@
     text-align: center;
     img {
     max-width: 100%;
-    @include media-xl {
+    @include media-4xl {
       max-width: initial;
     }
     }
@@ -60,6 +66,12 @@
         height: 637px;
       }
       @include media-xxl {
+        top: -79px;
+        right: 28px;
+        width: 1131px;
+        height: 697px;
+      }
+      @include media-4xl {
         top: -106px;
         right: -80px;
         width: 1531px;
@@ -71,6 +83,12 @@
     display: flex;
     margin-top: 300px;
     @include media-lg {
+      margin-top: 180px;
+    }
+    @include media-xxl {
+      margin-top: 146px;
+    }
+    @include media-4xl {
       margin-top: 180px;
     }
     &__caption {
@@ -93,6 +111,11 @@
         font-size: 50px;
       }
       @include media-xxl {
+        margin-top: 0;
+        font-size: 50px;
+        line-height: 82px;
+      }
+      @include media-4xl {
         margin-top: 0;
         font-size: 70px;
         line-height: 100px;
@@ -164,6 +187,11 @@
         margin-left: 20px;
         max-width: 325px;
       }
+      @include media-xxl {
+        margin-top: 33px;
+        margin-left: 20%;
+        max-width: 325px;
+      }
       @include media-lg {
         margin-left: 20%;
         max-width: 325px;
@@ -172,7 +200,7 @@
     &__img {
       img {
         max-width: 100%;
-        @include media-xxl {
+        @include media-4xl {
           max-width: initial;
         }
       }
@@ -181,5 +209,11 @@
   .divider {
     bottom: 106px;
     transform: translate(-50%, 0) rotate(-8.46deg);
+    @include media-xxl {
+      bottom: 68px;
+    }
+    @include media-4xl {
+      bottom: 106px;
+    }
   }
 }

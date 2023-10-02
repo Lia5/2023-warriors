@@ -24,7 +24,12 @@
     }
 }
 @mixin media-3xl {
-    @media (min-width: #{1640px}) {
+    @media (min-width: #{1600px}) {
+        @content;
+    }
+}
+@mixin media-4xl {
+    @media (min-width: #{1850px}) {
         @content;
     }
 }

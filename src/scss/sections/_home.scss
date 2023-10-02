@@ -1,13 +1,16 @@
 .home {
-  padding-top: 250px;
-  padding-bottom: 240px;
+  padding-top: 42px;
+  padding-bottom: 80px;
   @include media-md {
-    padding-top: 300px;
+    padding-top: 212px;
     padding-bottom: 0;
   }
   @include media-lg {
-    padding-top: 147px;
+    padding-top: 42px;
     padding-bottom: 145px;
+  }
+  @include media-xl {
+    padding-top: 24px;
   }
   &:before {
     content: "";
@@ -36,8 +39,20 @@
     max-width: 320px;
     font-size: 18px;
     letter-spacing: 1.2px;
-    margin: 0 auto;
+    margin: 0 0 0 32%;
     @include media-lg {
+      max-width: 308px;
+      font-size: 24px;
+      line-height: 28px;
+      margin: 0;
+    }
+    @include media-xl {
+      max-width: 240px;
+      font-size: 19px;
+      line-height: 1;
+      margin: 0;
+    }
+    @include media-4xl {
       max-width: 308px;
       font-size: 24px;
       line-height: 28px;
@@ -47,7 +62,10 @@
   &__text {
     font-weight: 300;
     margin-bottom: 20px;
-    @include media-lg {
+    @include media-xl {
+      margin-top: -79px;
+    }
+    @include media-4xl {
       margin-top: -90px;
     }
   }
@@ -67,9 +85,20 @@
     max-width: 350px;
     margin: 47px auto 0;
     text-align: center;
+    @include media-xl {
+      margin: 33px auto 0;
+    }
+    @include media-4xl {
+      margin: 47px auto 0;
+    }
     .btn {
       padding: 15px 35px;
-      @include media-lg {
+      @include media-xl {
+        padding: 23px 26px;
+        font-size: 15px;
+        line-height: 1;
+      }
+      @include media-4xl {
         padding: 30px 35px;
       }
     }

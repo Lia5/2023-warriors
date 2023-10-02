@@ -8,6 +8,9 @@
     padding-top: 0;
   }
   @include media-xxl {
+    padding-bottom: 334px;
+  }
+  @include media-4xl {
     padding-bottom: 473px;
   }
   z-index: 1;
@@ -26,10 +29,10 @@
   }
   .title {
     position: relative;
-    font-size: 36px;
+    font-size: 38px;
     line-height: 1.2;
     justify-content: flex-end;
-    margin-top: 240px;
+    margin-top: 100px;
     margin-bottom: 20px;
     @include media-lg {
       margin-top: -75px;
@@ -37,13 +40,23 @@
       margin-bottom: 0;
     }
     @include media-xl {
+      font-size: 60px;
+      line-height: 1.1;
+      margin-bottom: -60px;
+    }
+    @include media-4xl {
       font-size: 80px;
+      margin-bottom: 0;
 
     }
     .accent-text {
-      font-size: 70px;
-      line-height: 0.8;
+      font-size: 65px;
+      line-height: 46px;
       @include media-lg {
+        font-size: 83px;
+        line-height: 1;
+      }
+      @include media-4xl {
         font-size: 120px;
         line-height: 100px;
       }
@@ -64,6 +77,12 @@
         z-index: -1;
       }
       @include media-xl {
+        top: -480px;
+        left: -310px;
+        width: 615px;
+        height: 654px;
+      }
+      @include media-4xl {
         top: -630px;
         left: -430px;
         width: 855px;
@@ -89,7 +108,7 @@
   &__shooter {
     img {
       max-width: 100%;
-      @include media-xl {
+      @include media-4xl {
         max-width: initial;
       }
     }
@@ -102,7 +121,7 @@
     }
     img {
       max-width: 100%;
-      @include media-xl {
+      @include media-4xl {
         max-width: initial;
       }
     }
@@ -124,7 +143,10 @@
     margin-top: 75px;
     margin-bottom: 75px;
     position: relative;
-    @include media-lg {
+    @include media-xl {
+      margin-top: 125px;
+    }
+    @include media-4xl {
       justify-content: flex-end;
       display: flex;
       margin-bottom: 0;
@@ -136,20 +158,19 @@
       }
     }
     &:before {
-      content: "";
-      position: absolute;
-      top: 710px;
-      right: -25px;
-      width: 110%;
-      height: 431px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      background-image: url('../img/bg/spider-red.webp');
-      z-index: -1;
-      pointer-events: none;
       @include media-md {
-        top: 890px;
+        content: "";
+        position: absolute;
+        height: 431px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url('../img/bg/spider-red.webp');
+        z-index: -1;
+        pointer-events: none;
+        width: 520px;
+        top: 960px;
+        right: 65px;
       }
       @include media-lg {
         top: 316px;
@@ -158,12 +179,12 @@
         height: 531px;
       }
       @include media-xl {
-        top: 442px;
-        right: -345px;
-        width: 941px;
-        height: 718px;
+        width: 931px;
+        top: 152px;
+        right: -255px;
+        height: 761px;
       }
-      @include media-xxl {
+      @include media-4xl {
         width: 1011px;
         top: 416px;
         right: -245px;
@@ -175,18 +196,25 @@
   &__subtitle {
     @include media-lg {
       margin-bottom: 30px;
+      margin-top: -321px;
     }
-    @include media-3xl {
+    @include media-4xl {
       margin-top: -180px;
     }
   }
   .subtitle {
     @include media-lg {
+      max-width: 358px;
+    }
+    @include media-4xl {
       max-width: 428px;
     }
   }
   .text {
     @include media-lg {
+      max-width: 329px;
+    }
+    @include media-4xl {
       max-width: 439px;
     }
     p {
@@ -195,14 +223,20 @@
     p:not(:last-child) {
       margin-bottom: 12px;
       @include media-lg {
+        margin-bottom: 18px;
+      }
+      @include media-4xl {
         margin-bottom: 24px;
       }
     }
   }
   .divider {
     z-index: -2;
-    bottom: 257px;
+    bottom: 195px;
     transform: translate(-50%, 0) rotate(-8.46deg);
+    @include media-4xl {
+      bottom: 257px;
+    }
   }
 }
 
@@ -211,7 +245,7 @@
   top: 0;
 	display: flex;
 	align-items: center;
-	height: 60px;
+	height: 40px;
 	font-size: 29px;
 	font-weight: 500;
 	line-height: 1;
@@ -222,22 +256,33 @@
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 0);
-
   @include media-md {
-    font-size: 40px;
     top: 53px;
   }
   @include media-lg {
+    font-size: 28px;
+    transform: translate(-50%, 0) rotate(-18.07deg);
+    top: 174px;
+  }
+  @include media-4xl {
+    font-size: 40px;
+    height: 60px;
     transform: translate(-50%, 0) rotate(-18.07deg);
     top: 290px;
   }
 	.icon {
-		width: 44px;
-		height: 44px;
+		width: 30px;
+		height: 30px;
 		min-width: 44px;
 		margin: 0 10px;
+    @include media-4xl {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+    }
 	}
 	&--white {
+    display: none;
     top: 570px;
 		background: #FFF;
     border-color: #fff;
@@ -246,13 +291,14 @@
       top: 695px;
     }
     @include media-md {
+      display: flex;
       top: 935px;
     }
     @include media-lg {
       transform: translate(-50%, 0) rotate(-7.636deg);
-      top: 159px;
+      top: 143px;
     }
-    @include media-xl {
+    @include media-4xl {
       top: 250px;
 
     }

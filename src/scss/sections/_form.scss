@@ -11,6 +11,9 @@ input {
     padding-bottom: 100px;
   }
   @include media-xxl {
+    padding-bottom: 100px;
+  }
+  @include media-4xl {
     padding-bottom: 160px;
   }
   .subtitle {
@@ -29,7 +32,12 @@ input {
       margin-top: -74px;
     }
     @include media-xl {
+      margin-top: 38px;
+      margin-bottom: 35px;
+    }
+    @include media-4xl {
       margin-top: 58px;
+      margin-bottom: 50px;
     }
     &:before {
       @include media-lg {
@@ -52,6 +60,12 @@ input {
         height: 468px;
       }
       @include media-xxl {
+        bottom: 77px;
+        left: 206px;
+        width: 649px;
+        height: 488px;
+      }
+      @include media-4xl {
         bottom: 72px;
         left: 296px;
         width: 869px;
@@ -69,19 +83,25 @@ input {
     &__input {
       font-family: "Cabin", Arial, Helvetica, sans-serif;
       width: 100%;
-      padding: 14px 16px;
       box-sizing: border-box;
       color: #1F1F1F;
-      height: 52px;
-      font-size: 20px;
       font-weight: 400;
-      line-height: 24px;
       outline: none;
       border-radius: 50px;
       border: 2px solid #C8D7E6;
+      height: 42px;
+      font-size: 14px;
+      line-height: 1.1;
+      padding: 10px 11px;
+      @include media-4xl {
+        padding: 14px 16px;
+        font-size: 20px;
+        height: 52px;
+      }
       &::placeholder {
         font-family: "Cabin", Arial, Helvetica, sans-serif;
         color: #585858;
+        opacity: 0.8;
       }
       &.show-error {
         border-color: red;
@@ -94,24 +114,34 @@ input {
       order: -1;
       margin-bottom: 2px;
       color: #8AAFD5;
-      font-size: 20px;
       font-weight: 400;
-      line-height: 34px;
-      padding-left: 11px;
+      padding-left: 6px;
+      font-size: 14px;
+      line-height: 1.1;
+      @include media-4xl {
+        font-size: 20px;
+        line-height: 34px;
+        padding-left: 11px;
+      }
     }
   }
   &__btn {
-    margin-top: 40px;
+    margin-top: 28px;
     text-align: right;
-    .btn {
-      height: 60px;
-      padding: 13px 27px;
+    @include media-4xl {
+      margin-top: 40px;
     }
   }
   &__img {
+    @include media-xxl {
+      max-width: 490px;
+    }
+    @include media-4xl {
+      max-width: none;
+    }
     img {
       max-width: 100%;
-      @include media-xxl {
+      @include media-4xl {
         max-width: initial;
       }
     }

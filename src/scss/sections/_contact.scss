@@ -1,5 +1,8 @@
 .contact {
-  padding-bottom: 142px;
+  padding-bottom: 110px;
+  @include media-4xl {
+    padding-bottom: 142px;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -14,14 +17,20 @@
 		pointer-events: none;
   }
   .title {
-    margin-top: 110px;
+    margin-top: 80px;
     justify-content: center;
+    @include media-4xl {
+      margin-top: 110px;
+    }
   }
   .description {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 27px;
     @include media-lg {
       display: block;
+    }
+    @include media-4xl {
+      margin-bottom: 40px;
     }
     a {
       color: #1F1F1F;
@@ -31,10 +40,14 @@
     }
   }
   &__info {
-    margin-top: 70px;
-    max-width: 363px;
+    margin-top: 47px;
+    max-width: 273px;
     @include media-xl {
       margin-left: 35%;
+    }
+    @include media-4xl {
+      margin-top: 70px;
+      max-width: 363px;
     }
 
   }
@@ -49,7 +62,10 @@
   &__img {
     img {
       max-width: 100%;
-      @include media-lg {
+      @include media-xxl {
+        max-width: 116%;
+      }
+      @include media-4xl {
         max-width: initial;
       }
     }

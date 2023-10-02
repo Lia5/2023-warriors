@@ -2,10 +2,14 @@
   padding: 30px 0;
   background: #246EB9;
   color: #FCFBF8;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 300;
   line-height: 24px;
   @include media-lg {
+    padding: 60px 0;
+  }
+  @include media-4xl {
+    font-size: 20px;
     padding: 70px 0;
   }
   &__body {
@@ -27,9 +31,14 @@
     color: #FCFBF8;
   }
   .icon {
-    width: 35px;
-    height: 22px;
-    margin-left: 99px;
+    width: 28px;
+    height: 18px;
+    margin-left: 70px;
+    @include media-4xl {
+      width: 35px;
+      height: 22px;
+      margin-left: 99px;
+    }
   }
   &-logo {
     font-weight: 700;
@@ -37,16 +46,26 @@
     text-transform: uppercase;
     padding: 30px 0;
     @include media-lg {
+      padding: 0 0 0 11%;
+    }
+    @include media-4xl {
       padding: 0 0 0 128px
     }
     &__name {
-      font-size: 50px;
       letter-spacing: 2.5px;
-      margin-bottom: 10px;
+      font-size: 36px;
+      margin-bottom: 4px;
+      @include media-4xl {
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
     }
     &__company {
-      font-size: 18px;
+      font-size: 12px;
       letter-spacing: 2.7px;
+      @include media-4xl {
+        font-size: 18px;
+      }
     }
   }
 
