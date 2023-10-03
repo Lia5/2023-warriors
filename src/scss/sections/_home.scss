@@ -2,21 +2,21 @@
   padding-top: 42px;
   padding-bottom: 80px;
   @include media-md {
-    padding-top: 212px;
+    padding-top: 252px;
     padding-bottom: 0;
   }
   @include media-lg {
-    padding-top: 42px;
+    padding-top: 82px;
     padding-bottom: 145px;
   }
   @include media-xl {
-    padding-top: 24px;
+    padding-top: 104px;
   }
   @include media-3xl {
-    padding-top: 37px;
+    padding-top: 77px;
   }
   @include media-4xl {
-    padding-top: 40px;
+    padding-top: 90px;
     padding-bottom: 178px;
   }
   &:before {

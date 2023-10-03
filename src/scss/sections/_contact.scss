@@ -69,6 +69,10 @@
     margin-right: 15px;
     @include media-lg {
       margin-right: 0;
+      margin-bottom: 5px;
+    }
+    @include media-xxl {
+      margin-bottom: 7px;
     }
   }
   &__img {
