@@ -18,6 +18,10 @@
   font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
+  @include media-sm {
+    padding: 17px 20px;
+    font-size: 21px;
+  }
   @include media-lg {
     width: auto;
   }
@@ -33,7 +37,7 @@
   @include media-4xl {
     font-size: 20px;
     line-height: 24px;
-    padding: 13px 27px;
+    padding: 15px 27px;
   }
 	&:hover,
   &:active  {

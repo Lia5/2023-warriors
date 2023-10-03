@@ -11,7 +11,7 @@
     padding-bottom: 307px;
   }
   @include media-4xl {
-    padding-bottom: 375px;
+    padding-bottom: 359px;
   }
   &:before {
     content: "";
@@ -31,6 +31,9 @@
     font-size: 40px;
     position: relative;
     z-index: 1;
+    @include media-sm {
+      font-size: 56px;
+    }
     @include media-xl {
       font-size: 67px;
     }
@@ -39,6 +42,7 @@
     }
     @include media-4xl {
       font-size: 90px;
+      line-height: 110px;
     }
     &:before {
       content: "";
@@ -59,12 +63,16 @@
         width: 530px;
         height: 431px;
       }
-      @include media-md {
+      @include media-lg {
         content: none;
       }
     }
     .accent-text {
       font-size: 70px;
+      @include media-sm {
+        font-size: 86px;
+        line-height: 75px;
+      }
       @include media-xl {
         font-size: 110px;
         line-height: 50px;
@@ -75,7 +83,7 @@
       }
       @include media-4xl {
         font-size: 140px;
-        line-height: 50px;
+        line-height: 80px;
       }
     }
   }
@@ -127,7 +135,7 @@
       margin-bottom: 196px;
     }
     @include media-4xl {
-      margin-bottom: 217px;
+      margin-bottom: 227px;
     }
     &:before {
       content: "";
@@ -156,18 +164,6 @@
         max-width: initial;
         width: 122%;
       }
-    }
-  }
-  .btn {
-    height: 46px;
-    padding: 10px 21px;
-    @include media-3xl {
-      height: 52px;
-      padding: 10px 25px;
-    }
-    @include media-4xl {
-      height: 60px;
-      padding: 13px 27px;
     }
   }
   .divider {
@@ -223,6 +219,12 @@
       width: 382px;
       height: 405px;
       pointer-events: none;
+    }
+    @include media-lg {
+      bottom: 99px;
+      right: -164px;
+      width: 352px;
+      height: 375px;
     }
     @include media-xl {
       bottom: 69px;

@@ -217,8 +217,8 @@ ul,li {
 			height: 532px;
 		}
 		@include media-4xl {
-			top: -110px;
-			right: -110px;
+			top: -150px;
+			right: -123px;
 			width: 531px;
 			height: 642px;
 
@@ -258,7 +258,7 @@ ul,li {
 		}
 		@include media-4xl {
 			bottom: -436px;
-			left: -109px;
+			left: -122px;
 			width: 552px;
 			height: 372px;
 		}
@@ -276,6 +276,9 @@ ul,li {
 	font-weight: 700;
 	line-height: 1.2;
 	text-transform: uppercase;
+	@include media-sm {
+		font-size: 55px;
+	}
 	@include media-lg {
 		font-size: 68px;
 	}
@@ -296,6 +299,9 @@ ul,li {
 	.accent-text {
 		font-size: 76px;
 		line-height: 1;
+		@include media-sm {
+			font-size: 82px;
+		}
 		@include media-lg {
 			font-size: 100px;
 			line-height: 68px;
@@ -332,21 +338,29 @@ ul,li {
 	line-height: 42px;
 	text-transform: uppercase;
 	align-items: baseline;
+	@include media-sm {
+		font-size: 59px;
+		line-height: 1.2;
+	}
 	@include media-lg {
 		margin-bottom: 0;
-		font-size: 25px;
     line-height: 1.1;
+		font-size: 37px;
 	}
 	@include media-3xl {
 		font-size: 29px;
   }
   @include media-4xl {
 		font-size: 38px;
-		line-height: 42px;
+		line-height: 36px;
 	}
 	.accent-text {
 		font-size: 64px;
 		line-height: 50px;
+		@include media-sm {
+			font-size: 93px;
+			line-height: 80px;
+		}
 		@include media-lg {
 			font-size: 49px;
 			line-height: 37px;
@@ -366,6 +380,9 @@ ul,li {
 .description {
 	font-size: 19px;
 	line-height: 1.2;
+	@include media-sm {
+		font-size: 24px;
+	}
 	@include media-xl {
     font-size: 20px;
     line-height: 1.2;
@@ -382,6 +399,9 @@ ul,li {
 	font-size: 17px;
 	font-weight: 300;
 	line-height: 1.2;
+	@include media-sm {
+		font-size: 23px;
+	}
 	@include media-lg {
     font-size: 17px;
     line-height: 20px;

@@ -44,7 +44,7 @@ input {
     }
     @include media-4xl {
       margin-top: 58px;
-      margin-bottom: 50px;
+      margin-bottom: 43px;
     }
     &:before {
       @include media-lg {
@@ -84,6 +84,9 @@ input {
     }
     .accent-text {
       color: #246EB9;
+      @include media-4xl {
+        line-height: 46px;
+      }
     }
   }
   &-line {
@@ -139,7 +142,7 @@ input {
       }
       @include media-4xl {
         font-size: 20px;
-        line-height: 34px;
+        line-height: 31px;
         padding-left: 11px;
       }
     }

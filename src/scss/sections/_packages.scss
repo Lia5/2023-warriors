@@ -10,7 +10,7 @@
     padding-bottom: 341px;
   }
   @include media-4xl {
-    padding-bottom: 400px;
+    padding-bottom: 417px;
   }
   &:before {
     content: "";
@@ -37,7 +37,7 @@
       margin-bottom: 83px;
     }
     @include media-4xl {
-      margin-bottom: 80px;
+      margin-bottom: 85px;
     }
     &:before {
       @include media-lg {
@@ -240,6 +240,9 @@
         @include media-3xl {
           margin-bottom: 6px;
         }
+        @include media-4xl {
+          margin-bottom: 9px;
+        }
       }
     }
     &__option {
@@ -423,7 +426,7 @@
       margin-bottom: 232px;
     }
     @include media-4xl {
-      margin-top: 91px;
+      margin-top: 100px;
       margin-bottom: 274px;
     }
     .description {
@@ -449,7 +452,7 @@
       margin-top: 150px;
     }
     @include media-4xl {
-      margin-top: 134px;
+      margin-top: 205px;
     }
     .slick-list {
       overflow: hidden;
@@ -512,7 +515,7 @@
       @include media-4xl {
         font-size: 64px;
         line-height: 40px;
-        margin-bottom: 33px;
+        margin-bottom: 39px;
       }
       &:before {
         content: "";

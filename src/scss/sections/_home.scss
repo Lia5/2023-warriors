@@ -16,7 +16,8 @@
     padding-top: 37px;
   }
   @include media-4xl {
-    padding-top: 24px;
+    padding-top: 40px;
+    padding-bottom: 178px;
   }
   &:before {
     content: "";
@@ -102,11 +103,8 @@
     @include media-xl {
       margin: 33px auto 0;
     }
-    @include media-3xl {
-
-    }
     @include media-4xl {
-      margin: 47px auto 0;
+      margin: 50px auto 0;
     }
     .btn {
       padding: 15px 35px;
@@ -120,7 +118,8 @@
         font-size: 17px;
       }
       @include media-4xl {
-        padding: 30px 35px;
+        font-size: 20px;
+        padding: 34px 35px;
       }
     }
   }

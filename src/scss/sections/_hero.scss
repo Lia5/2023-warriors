@@ -37,7 +37,16 @@
     justify-content: flex-end;
     margin-top: 100px;
     margin-bottom: 20px;
+    @include media-sm {
+      font-size: 56px;
+    }
+    @include media-md {
+      margin-top: 210px;
+      max-width: 500px;
+      margin-left: auto;
+    }
     @include media-lg {
+      max-width: none;
       margin-top: -75px;
       font-size: 62px;
       margin-bottom: 0;
@@ -54,14 +63,17 @@
       margin-bottom: -80px;
     }
     @include media-4xl {
-      margin-top: -75px;
+      margin-top: -65px;
       font-size: 80px;
-      margin-bottom: 0;
-
+      margin-bottom: -94px;
     }
     .accent-text {
       font-size: 65px;
       line-height: 46px;
+      @include media-sm {
+        font-size: 86px;
+        line-height: 75px;
+      }
       @include media-lg {
         font-size: 83px;
         line-height: 1;
@@ -106,7 +118,6 @@
         left: -430px;
         width: 855px;
         height: 834px;
-
       }
     }
   }
@@ -187,7 +198,7 @@
       margin-top: 148px;
     }
     @include media-4xl {
-      margin-top: 125px;
+      margin-top: 175px;
       justify-content: flex-end;
       display: flex;
       margin-bottom: 0;
@@ -199,7 +210,7 @@
       }
     }
     &:before {
-      @include media-md {
+      @include media-lg {
         content: "";
         position: absolute;
         height: 431px;
@@ -236,20 +247,22 @@
         top: 416px;
         right: -245px;
         height: 731px;
-
       }
     }
   }
   &__subtitle {
     @include media-lg {
+      margin-top: -121px;
       margin-bottom: 30px;
+    }
+    @include media-xl {
       margin-top: -321px;
     }
     @include media-3xl {
       margin-top: -356px;
     }
     @include media-4xl {
-      margin-top: -180px;
+      margin-top: -319px;
     }
   }
   .subtitle {
@@ -335,7 +348,7 @@
     font-size: 40px;
     height: 60px;
     transform: translate(-50%, 0) rotate(-18.07deg);
-    top: 290px;
+    top: 253px;
   }
 	.icon {
 		width: 30px;
@@ -372,8 +385,7 @@
       top: 183px;
     }
     @include media-4xl {
-      top: 250px;
-
+      top: 209px;
     }
 	}
 }

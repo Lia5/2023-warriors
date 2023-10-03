@@ -7,7 +7,7 @@
     padding-bottom: 181px;
   }
   @include media-4xl {
-    padding-bottom: 147px;
+    padding-bottom: 230px;
   }
   &:before {
     content: "";
@@ -26,11 +26,16 @@
     margin-top: 20px;
     margin-bottom: 50px;
     justify-content: flex-end;
+    @include media-sm {
+      margin-top: 100px;
+    }
     @include media-3xl {
+      margin-top: 20px;
       margin-bottom: 45px;
     }
     @include media-4xl {
-    margin-bottom: 50px;
+      margin-top: 40px;
+      margin-bottom: 50px;
     }
   }
   .description {
@@ -117,6 +122,10 @@
       font-weight: 600;
       line-height: 1;
       text-transform: uppercase;
+      @include media-sm {
+        font-size: 46px;
+        line-height: 1.2;
+      }
       @include media-md {
         font-size: 30px;
         line-height: 1.2;
@@ -143,7 +152,7 @@
       @include media-4xl {
         margin-top: 0;
         font-size: 70px;
-        line-height: 100px;
+        line-height: 117px;
       }
       li {
         display: flex;
@@ -194,6 +203,9 @@
     }
     &__contents {
       margin-top: 25px;
+      @include media-4xl {
+        margin-top: 43px;
+      }
     }
     &__content {
       flex-direction: column-reverse;
@@ -226,9 +238,9 @@
         max-width: 265px;
       }
       @include media-4xl {
-        margin-top: 33px;
+        margin-top: 54px;
         margin-left: 20%;
-        max-width: 325px;
+        max-width: 315px;
       }
     }
     &__img {
@@ -246,13 +258,16 @@
   .divider {
     bottom: 106px;
     transform: translate(-50%, 0) rotate(-8.46deg);
+    @include media-lg {
+      bottom: 55px;
+    }
     @include media-xxl {
       bottom: 68px;
     }
     @include media-3xl {
 
-  }
-  @include media-4xl {
+    }
+    @include media-4xl {
       bottom: 106px;
     }
   }

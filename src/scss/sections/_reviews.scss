@@ -97,18 +97,31 @@
   }
   .description {
     text-align: center;
+    margin-top: 35px;
+    @include media-xxl {
+      margin-top: 0;
+    }
   }
   &__btn {
+    display: none;
     text-align: center;
     margin-top: 70px;
     margin-bottom: 35px;
+    @include media-xxl {
+      display: block;
+    }
     @include media-3xl {
       margin-top: 85px;
       margin-bottom: 41px;
     }
     @include media-4xl {
-      margin-top: 70px;
+      margin-top: 101px;
       margin-bottom: 50px;
+    }
+    .btn {
+      @include media-4xl {
+        padding: 16px 27px;
+      }
     }
   }
   .divider {
