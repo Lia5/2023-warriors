@@ -1,0 +1,15 @@
+include ../common/_var
+include ../common/_mixin
+
+doctypehtml
+html(lang='en')
+	include ../common/head
+	body
+		include ../common/sprite
+		.main
+			include ../sections/thanks-part
+			include ../sections/footer
+		include ../sections/modal
+
+		script(src="js/custom.js")
+	// END body

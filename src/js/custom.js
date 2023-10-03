@@ -231,15 +231,7 @@ $(function() {
                         url: "../mail.php",
                         data: form.serialize()
                     }).done(function() {
-                        const thanksModal =  $('#modalFinish');
-                        const modalWrap = $('.modal__wrap');
-                        modalWrap.removeClass('fadeOutUp');
-                        modalWrap.addClass('fadeInDown');
-                        $('.modal').addClass('disabled');
-                        thanksModal.removeClass('disabled');
-                        thanksModal.addClass('flex');
-                        $('body').addClass('body-modal-open');
-                        form.trigger("reset");
+                        window.location.replace("/thanks.html");
                     });
 
                     $.ajax({

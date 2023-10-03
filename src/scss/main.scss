@@ -67,6 +67,9 @@ b, strong {
 // 	}
 // }
 .main {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	overflow: hidden;
 	position: relative;
 	background: linear-gradient(179deg, #FFF9D9 0.21%, #FEF6E0 3.31%, #FDF3E7 12.78%, #FCF0EF 21.02%, #FFF9D9 30.67%, #FDF4E6 38.94%, #FCF0EF 45.4%, #FFF8DA 55.9%, #FDF4E4 65.79%, #FCF0EF 78.7%, #FCF0F0 89.91%, #FEF6E0 99.96%);
@@ -471,5 +474,6 @@ section {
 @import "sections/contact";
 @import "sections/footer";
 @import "sections/modal";
+@import "sections/thanks";
 
 // @import "media"; // Always at the end
