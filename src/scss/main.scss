@@ -2,6 +2,7 @@
 @import "tools/_normalize.scss";
 @import "tools/_bootstrap-grid.scss";
 @import "tools/_slick";
+@import "../libs/fancybox/jquery.fancybox.css";
 @import "vars";
 @import "fonts";
 
@@ -403,8 +404,8 @@ ul,li {
 		font-size: 23px;
 	}
 	@include media-lg {
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 19px;
+    line-height: 1.2;
 	}
 	@include media-3xl {
 

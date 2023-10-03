@@ -124,7 +124,12 @@ $(function() {
             }
         ]
     });
-
+    $('.reviews__btn a').click(function(e){
+        e.preventDefault();
+        $this = $(this);
+        $this.addClass('hide')
+        $('.reviews__item--hidden').addClass('active');
+    })
     if($('.accordeon').length) {
         var contents = $('.accordeon-content');
         var titles = $('.accordeon-title');

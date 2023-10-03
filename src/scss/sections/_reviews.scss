@@ -94,6 +94,20 @@
       }
 
     }
+    &--hidden {
+      @include media-xxl {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: opacity 0.5s ease-in-out;
+      }
+      &.active {
+        height: auto;
+        height: 100%;
+        opacity: 1;
+        overflow: visible;
+      }
+    }
   }
   .description {
     text-align: center;

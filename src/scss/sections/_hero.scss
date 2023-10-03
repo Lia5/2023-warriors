@@ -121,13 +121,22 @@
       }
     }
   }
-  &__tg {
+  &__icons {
+    display: flex;
     margin-bottom: 75px;
+  }
+  &__icon {
     display: inline-flex;
+    .icon {
+      fill: #000;
+    }
     &:hover {
       .icon {
         fill: #FF4986;
       }
+    }
+    &+.hero__icon {
+      margin-left: 15px;
     }
   }
   .icon {
@@ -170,7 +179,6 @@
   }
   .description {
     max-width: 496px;
-    letter-spacing: 1.4px;
     p {
       margin-top: 0;
     }
