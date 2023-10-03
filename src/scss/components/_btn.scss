@@ -26,6 +26,10 @@
     line-height: 24px;
     padding: 9px 17px;
   }
+  @include media-3xl {
+    font-size: 17px;
+    padding: 14px 25px;
+  }
   @include media-4xl {
     font-size: 20px;
     line-height: 24px;

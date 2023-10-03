@@ -7,6 +7,9 @@
   @include media-xxl {
     padding: 14px 0;
   }
+  @include media-3xl {
+    padding: 18px 0;
+  }
   @include media-4xl {
     padding: 28px 0;
   }
@@ -18,6 +21,9 @@
     @include media-xl {
       width: 14px;
       height: 17px;
+    }
+    @include media-3xl {
+
     }
     @include media-4xl {
       width: 24px;
@@ -41,6 +47,12 @@
       @include media-xl {
         font-size: 30px;
       }
+      @include media-3xl {
+        font-size: 25px;
+      }
+      @include media-4xl {
+        font-size: 30px;
+      }
     }
     &__company {
       font-size: 8px;
@@ -49,6 +61,12 @@
         font-size: 7px;
       }
       @include media-xl {
+        font-size: 11px;
+      }
+      @include media-3xl {
+        font-size: 10px;
+      }
+      @include media-4xl {
         font-size: 11px;
       }
     }
@@ -67,6 +85,9 @@
     @include media-xl {
       font-size: 16px;
       line-height: 1.2;
+    }
+    @include media-3xl {
+      font-size: 19px;
     }
     @include media-4xl {
       font-size: 22px;
@@ -108,6 +129,10 @@
       font-size: 16px;
       line-height: 20px;
     }
+    @include media-3xl {
+      margin: 0 42px;
+      font-size: 18px;
+    }
     @include media-4xl {
       margin: 0 51px;
       font-size: 22px;
@@ -130,6 +155,10 @@
     @include media-xxl {
       font-size: 15px;
       padding: 15px 18px;
+    }
+    @include media-3xl {
+      font-size: 17px;
+      padding: 15px 22px;
     }
     @include media-4xl {
       font-size: 20px;

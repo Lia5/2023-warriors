@@ -6,6 +6,9 @@
   @include media-xl {
     padding-bottom: 174px;
   }
+  @include media-3xl {
+    padding-bottom: 207px;
+  }
   @include media-4xl {
     padding-bottom: 255px;
   }
@@ -27,6 +30,9 @@
     justify-content: center;
     margin-bottom: 63px;
     position: relative;
+    @include media-3xl {
+
+    }
     @include media-4xl {
       margin-bottom: 80px;
     }
@@ -59,6 +65,9 @@
         left: -381px;
         width: 856px;
         height: 862px;
+      }
+      @include media-3xl {
+
       }
       @include media-4xl {
         top: -456px;
@@ -93,7 +102,12 @@
     text-align: center;
     margin-top: 70px;
     margin-bottom: 35px;
+    @include media-3xl {
+      margin-top: 85px;
+      margin-bottom: 41px;
+    }
     @include media-4xl {
+      margin-top: 70px;
       margin-bottom: 50px;
     }
   }

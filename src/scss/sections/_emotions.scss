@@ -3,6 +3,9 @@
   @include media-lg {
     padding-bottom: 165px;
   }
+  @include media-3xl {
+    padding-bottom: 181px;
+  }
   @include media-4xl {
     padding-bottom: 147px;
   }
@@ -23,6 +26,12 @@
     margin-top: 20px;
     margin-bottom: 50px;
     justify-content: flex-end;
+    @include media-3xl {
+      margin-bottom: 45px;
+    }
+    @include media-4xl {
+    margin-bottom: 50px;
+    }
   }
   .description {
     @include media-lg {
@@ -33,10 +42,13 @@
   &__img {
     text-align: center;
     img {
-    max-width: 100%;
-    @include media-4xl {
-      max-width: initial;
-    }
+      max-width: 100%;
+      @include media-3xl {
+
+      }
+      @include media-4xl {
+        max-width: initial;
+      }
     }
   }
   &__description {
@@ -71,6 +83,12 @@
         width: 1131px;
         height: 697px;
       }
+      @include media-3xl {
+        top: -99px;
+        right: 8px;
+        width: 1261px;
+        height: 797px;
+      }
       @include media-4xl {
         top: -106px;
         right: -80px;
@@ -87,6 +105,9 @@
     }
     @include media-xxl {
       margin-top: 146px;
+    }
+    @include media-3xl {
+
     }
     @include media-4xl {
       margin-top: 180px;
@@ -114,6 +135,10 @@
         margin-top: 0;
         font-size: 50px;
         line-height: 82px;
+      }
+      @include media-3xl {
+        font-size: 59px;
+        line-height: 99px;
       }
       @include media-4xl {
         margin-top: 0;
@@ -196,10 +221,22 @@
         margin-left: 20%;
         max-width: 325px;
       }
+      @include media-3xl {
+        margin-top: 60px;
+        max-width: 265px;
+      }
+      @include media-4xl {
+        margin-top: 33px;
+        margin-left: 20%;
+        max-width: 325px;
+      }
     }
     &__img {
       img {
         max-width: 100%;
+        @include media-3xl {
+
+        }
         @include media-4xl {
           max-width: initial;
         }
@@ -212,7 +249,10 @@
     @include media-xxl {
       bottom: 68px;
     }
-    @include media-4xl {
+    @include media-3xl {
+
+  }
+  @include media-4xl {
       bottom: 106px;
     }
   }

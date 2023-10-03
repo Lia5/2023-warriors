@@ -1,5 +1,8 @@
 .contact {
   padding-bottom: 110px;
+  @include media-3xl {
+    padding-bottom: 119px;
+  }
   @include media-4xl {
     padding-bottom: 142px;
   }
@@ -19,6 +22,9 @@
   .title {
     margin-top: 80px;
     justify-content: center;
+    @include media-3xl {
+      margin-top: 96px;
+    }
     @include media-4xl {
       margin-top: 110px;
     }
@@ -28,6 +34,9 @@
     margin-bottom: 27px;
     @include media-lg {
       display: block;
+    }
+    @include media-3xl {
+      margin-bottom: 32px;
     }
     @include media-4xl {
       margin-bottom: 40px;
@@ -44,6 +53,9 @@
     max-width: 273px;
     @include media-xl {
       margin-left: 35%;
+    }
+    @include media-3xl {
+
     }
     @include media-4xl {
       margin-top: 70px;
@@ -64,6 +76,9 @@
       max-width: 100%;
       @include media-xxl {
         max-width: 116%;
+      }
+      @include media-3xl {
+        max-width: 118%;
       }
       @include media-4xl {
         max-width: initial;

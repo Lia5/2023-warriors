@@ -7,6 +7,9 @@
   @include media-xl {
     padding-bottom: 259px;
   }
+  @include media-3xl {
+    padding-bottom: 307px;
+  }
   @include media-4xl {
     padding-bottom: 375px;
   }
@@ -28,6 +31,15 @@
     font-size: 40px;
     position: relative;
     z-index: 1;
+    @include media-xl {
+      font-size: 67px;
+    }
+    @include media-3xl {
+      font-size: 77px;
+    }
+    @include media-4xl {
+      font-size: 90px;
+    }
     &:before {
       content: "";
       position: absolute;
@@ -51,13 +63,18 @@
         content: none;
       }
     }
-    @include media-xl {
-      font-size: 67px;
-    }
     .accent-text {
       font-size: 70px;
       @include media-xl {
         font-size: 110px;
+        line-height: 50px;
+      }
+      @include media-3xl {
+        font-size: 124px;
+        line-height: 50px;
+      }
+      @include media-4xl {
+        font-size: 140px;
         line-height: 50px;
       }
     }
@@ -72,12 +89,23 @@
     @include media-xxl {
       margin-top: 20px;
     }
+    @include media-3xl {
+      margin-top: 5px;
+      max-width: 280px;
+    }
     @include media-4xl {
       margin-top: 6px;
+      max-width: 360px;
     }
   }
   .text {
     max-width: 360px;
+    @include media-3xl {
+      max-width: 300px;
+    }
+    @include media-3xl {
+      max-width: 360px;
+    }
   }
   &__img {
     display: flex;
@@ -94,6 +122,9 @@
     }
     @include media-xxl {
       margin-bottom: 156px;
+    }
+    @include media-3xl {
+      margin-bottom: 196px;
     }
     @include media-4xl {
       margin-bottom: 217px;
@@ -130,6 +161,10 @@
   .btn {
     height: 46px;
     padding: 10px 21px;
+    @include media-3xl {
+      height: 52px;
+      padding: 10px 25px;
+    }
     @include media-4xl {
       height: 60px;
       padding: 13px 27px;
@@ -146,6 +181,9 @@
     }
     @include media-xxl {
       bottom: 181px;
+    }
+    @include media-3xl {
+      bottom: 212px;
     }
     @include media-4xl {
       bottom: 263px;
@@ -198,6 +236,12 @@
       width: 692px;
       height: 725px;
     }
+    @include media-3xl {
+      bottom: -146px;
+      right: -598px;
+      width: 782px;
+      height: 845px;
+    }
     @include media-4xl {
       bottom: -126px;
       right: -714px;
@@ -219,9 +263,14 @@
       max-width: 210px;
       margin-bottom: 0;
     }
+    @include media-3xl {
+      font-size: 22px;
+      margin-bottom: 21px;
+    }
     @include media-4xl {
       line-height: 32px;
       font-size: 28px;
+      margin-bottom: 0;
     }
     .accent-color {
       font-weight: 500;
@@ -238,6 +287,9 @@
     @include media-lg {
       font-size: 69px;
     }
+    @include media-3xl {
+
+    }
     @include media-4xl {
       font-size: 90px;
     }
@@ -250,6 +302,9 @@
     @include media-lg {
       font-size: 35px;
       top: -37px;
+    }
+    @include media-3xl {
+
     }
     @include media-4xl {
       font-size: 50px;

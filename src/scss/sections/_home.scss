@@ -12,6 +12,12 @@
   @include media-xl {
     padding-top: 24px;
   }
+  @include media-3xl {
+    padding-top: 37px;
+  }
+  @include media-4xl {
+    padding-top: 24px;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -52,6 +58,11 @@
       line-height: 1;
       margin: 0;
     }
+    @include media-3xl {
+      max-width: 268px;
+      font-size: 21px;
+      line-height: 1.2;
+    }
     @include media-4xl {
       max-width: 308px;
       font-size: 24px;
@@ -64,6 +75,9 @@
     margin-bottom: 20px;
     @include media-xl {
       margin-top: -79px;
+    }
+    @include media-3xl {
+      margin-top: -87px;
     }
     @include media-4xl {
       margin-top: -90px;
@@ -88,6 +102,9 @@
     @include media-xl {
       margin: 33px auto 0;
     }
+    @include media-3xl {
+
+    }
     @include media-4xl {
       margin: 47px auto 0;
     }
@@ -97,6 +114,10 @@
         padding: 23px 26px;
         font-size: 15px;
         line-height: 1;
+      }
+      @include media-3xl {
+        padding: 25px 31px;
+        font-size: 17px;
       }
       @include media-4xl {
         padding: 30px 35px;

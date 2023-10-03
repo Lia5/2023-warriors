@@ -8,6 +8,9 @@
   @include media-lg {
     padding: 60px 0;
   }
+  @include media-3xl {
+    font-size: 17px;
+  }
   @include media-4xl {
     font-size: 20px;
     padding: 70px 0;
@@ -34,6 +37,9 @@
     width: 28px;
     height: 18px;
     margin-left: 70px;
+    @include media-3xl {
+      margin-left: 86px;
+    }
     @include media-4xl {
       width: 35px;
       height: 22px;
@@ -48,6 +54,9 @@
     @include media-lg {
       padding: 0 0 0 11%;
     }
+    @include media-3xl {
+      padding: 0 0 0 7%;
+    }
     @include media-4xl {
       padding: 0 0 0 128px
     }
@@ -55,6 +64,9 @@
       letter-spacing: 2.5px;
       font-size: 36px;
       margin-bottom: 4px;
+      @include media-3xl {
+        font-size: 41px;
+      }
       @include media-4xl {
         font-size: 50px;
         margin-bottom: 10px;
@@ -63,6 +75,9 @@
     &__company {
       font-size: 12px;
       letter-spacing: 2.7px;
+      @include media-3xl {
+        font-size: 15px;
+      }
       @include media-4xl {
         font-size: 18px;
       }

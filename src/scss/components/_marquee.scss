@@ -20,6 +20,9 @@
   animation: marquee-anim 20s linear infinite;
   cursor: pointer;
   padding: 0;
+  @include media-3xl {
+
+  }
   @include media-4xl {
     height: 60px;
   }
@@ -33,6 +36,9 @@
   position: absolute;
   top: 0;
   animation: marquee-anim2 20s linear infinite;
+  @include media-3xl {
+
+  }
   @include media-4xl {
     height: 60px;
   }

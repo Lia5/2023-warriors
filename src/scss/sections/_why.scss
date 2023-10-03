@@ -1,5 +1,8 @@
 .why {
   padding-bottom: 179px;
+  @include media-3xl {
+    padding-bottom: 198px;
+  }
   @include media-4xl {
     padding-bottom: 250px;
   }
@@ -25,6 +28,9 @@
     }
     @include media-xxl {
       margin-bottom: 96px;
+    }
+    @include media-3xl {
+      margin-bottom: 106px;
     }
     @include media-4xl {
       margin-bottom: 130px;
@@ -55,6 +61,12 @@
         width: 740px;
         height: 720px;
       }
+      @include media-3xl {
+        top: -241px;
+        left: 643px;
+        width: 871px;
+        height: 740px;
+      }
       @include media-4xl {
         top: -290px;
         left: 794px;
@@ -84,6 +96,9 @@
     @include media-lg {
       margin-top: 74px;
     }
+    @include media-3xl {
+      margin-top: 78px;
+    }
     @include media-4xl {
       margin-top: 100px;
     }
@@ -100,7 +115,12 @@
         font-size: 17px;
         line-height: 1.1;
       }
+      @include media-3xl {
+        font-size: 20px;
+        padding-top: 24px;
+      }
       @include media-4xl {
+        padding-top: 20px;
         font-size: 24px;
         line-height: 40px;
       }
@@ -123,6 +143,9 @@
         @include media-lg {
           top: 18px;
         }
+        @include media-3xl {
+
+        }
         @include media-4xl {
           top: 29px;
         }
@@ -141,6 +164,9 @@
     transform: translate(-50%, 0) rotate(8.46deg);
     @include media-xxl {
       bottom: 51px;
+    }
+    @include media-3xl {
+
     }
     @include media-4xl {
       bottom: 80px;

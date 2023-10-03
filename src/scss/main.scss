@@ -142,6 +142,10 @@ ul,li {
     font-size: 100px;
     line-height: 100px;
 	}
+  @include media-3xl {
+    font-size: 115px;
+    line-height: 116px;
+  }
   @include media-4xl {
 		font-size: 140px;
 		line-height: 145px; /* 103.571% */
@@ -166,6 +170,9 @@ ul,li {
 		@include media-xl {
 			font-size: 150px;
 			line-height: 100px;
+		}
+		@include media-3xl {
+			font-size: 170px;
 		}
 		@include media-4xl {
 			font-size: 200px;
@@ -203,6 +210,12 @@ ul,li {
 			width: 411px;
 			height: 492px;
 		}
+		@include media-3xl {
+			top: -130px;
+			right: -98px;
+			width: 431px;
+			height: 532px;
+		}
 		@include media-4xl {
 			top: -110px;
 			right: -110px;
@@ -237,6 +250,12 @@ ul,li {
 			width: 392px;
 			height: 262px;
 		}
+		@include media-3xl {
+			bottom: -378px;
+			left: -107px;
+			width: 470px;
+			height: 311px;
+		}
 		@include media-4xl {
 			bottom: -436px;
 			left: -109px;
@@ -267,7 +286,10 @@ ul,li {
     font-size: 65px;
     line-height: 1.1;
 	}
-	@include media-4xl {
+	@include media-3xl {
+		font-size: 77px;
+  }
+  @include media-4xl {
 		font-size: 90px;
 		line-height: 100px;
 	}
@@ -285,6 +307,9 @@ ul,li {
 		@include media-xxl {
 			font-size: 101px;
 			line-height: 65px;
+		}
+		@include media-3xl {
+			font-size: 115px;
 		}
 		@include media-4xl {
 			font-size: 140px;
@@ -312,7 +337,10 @@ ul,li {
 		font-size: 25px;
     line-height: 1.1;
 	}
-	@include media-4xl {
+	@include media-3xl {
+		font-size: 29px;
+  }
+  @include media-4xl {
 		font-size: 38px;
 		line-height: 42px;
 	}
@@ -322,6 +350,9 @@ ul,li {
 		@include media-lg {
 			font-size: 49px;
 			line-height: 37px;
+		}
+		@include media-3xl {
+			font-size: 55px;
 		}
 		@include media-4xl {
 			font-size: 64px;
@@ -339,7 +370,10 @@ ul,li {
     font-size: 20px;
     line-height: 1.2;
 	}
-	@include media-4xl {
+	@include media-3xl {
+    font-size: 24px;
+  }
+  @include media-4xl {
 		font-size: 28px;
 		line-height: 34px;
 	}
@@ -352,7 +386,10 @@ ul,li {
     font-size: 17px;
     line-height: 20px;
 	}
-	@include media-4xl {
+	@include media-3xl {
+
+  }
+  @include media-4xl {
 		font-size: 20px;
 		line-height: 24px;
 	}
@@ -384,7 +421,10 @@ section {
 	border-top: 2px solid #1F1F1F;
 	border-bottom: 2px solid #1F1F1F;
 	background: #FCFBF8;
-	@include media-4xl {
+	@include media-3xl {
+    height: 17px;
+  }
+  @include media-4xl {
 		height: 21px;
 	}
 }
