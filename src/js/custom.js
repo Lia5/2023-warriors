@@ -4,35 +4,43 @@ $(function() {
         .addClass('active').siblings().removeClass('active')
         .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
         console.log($(this).index());
-        $('.tabs__caption li').removeClass('active6 active5 active4 active3 active2');
-        switch($(this).index()) {
-            case 0 :
-                break;
-            case 1 :
-                $('.tabs__caption li').eq(0).addClass('active6');
-                break;
-            case 2 :
-                $('.tabs__caption li').eq(0).addClass('active5');
-                $('.tabs__caption li').eq(1).addClass('active6');
-                break;
-            case 3 :
-                $('.tabs__caption li').eq(0).addClass('active4');
-                $('.tabs__caption li').eq(1).addClass('active5');
-                $('.tabs__caption li').eq(2).addClass('active6');
-                break;
-            case 4 :
-                $('.tabs__caption li').eq(0).addClass('active3');
-                $('.tabs__caption li').eq(1).addClass('active4');
-                $('.tabs__caption li').eq(2).addClass('active5');
-                $('.tabs__caption li').eq(3).addClass('active6');
-                break;
-            case 5 :
-                $('.tabs__caption li').eq(0).addClass('active2');
-                $('.tabs__caption li').eq(1).addClass('active3');
-                $('.tabs__caption li').eq(2).addClass('active5');
-                $('.tabs__caption li').eq(3).addClass('active5');
-                $('.tabs__caption li').eq(4).addClass('active6');
-                break;
+        console.log($(this));
+        if($(this).closest('.tabs').hasClass('packages-item__choices')){
+            let valOption = $(this).attr('data-val');
+            console.log(valOption);
+            $('#packageStandart input[name="info"]').attr('value', 'пакет стандарт - ' + valOption);
+        }
+        if($(this).closest('.tabs').hasClass('emotions-tabs')){
+            $('.tabs__caption li').removeClass('active6 active5 active4 active3 active2');
+            switch($(this).index()) {
+                case 0 :
+                    break;
+                case 1 :
+                    $('.tabs__caption li').eq(0).addClass('active6');
+                    break;
+                case 2 :
+                    $('.tabs__caption li').eq(0).addClass('active5');
+                    $('.tabs__caption li').eq(1).addClass('active6');
+                    break;
+                case 3 :
+                    $('.tabs__caption li').eq(0).addClass('active4');
+                    $('.tabs__caption li').eq(1).addClass('active5');
+                    $('.tabs__caption li').eq(2).addClass('active6');
+                    break;
+                case 4 :
+                    $('.tabs__caption li').eq(0).addClass('active3');
+                    $('.tabs__caption li').eq(1).addClass('active4');
+                    $('.tabs__caption li').eq(2).addClass('active5');
+                    $('.tabs__caption li').eq(3).addClass('active6');
+                    break;
+                case 5 :
+                    $('.tabs__caption li').eq(0).addClass('active2');
+                    $('.tabs__caption li').eq(1).addClass('active3');
+                    $('.tabs__caption li').eq(2).addClass('active5');
+                    $('.tabs__caption li').eq(3).addClass('active5');
+                    $('.tabs__caption li').eq(4).addClass('active6');
+                    break;
+            }
         }
     });
 

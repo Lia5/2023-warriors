@@ -13,7 +13,7 @@
     <meta property="og:site_name" content="Warriors">
     <meta property="og:title" content="Дитяче свято в Warriors: активний відпочинок у Києві">
     <meta property="og:description" content="Активний захід з лазертагом, пейнтболом і квестами для вашої дитини і її друзів.">
-    <meta property="og:image" content="img/logo.png">
+    <meta property="og:image" content="img/warriors.png">
     <link rel="stylesheet" href="css/main.min.css">
     <title>Дитяче свято в Warriors: активний відпочинок у Києві</title>
   </head>
@@ -385,8 +385,8 @@
                       <div>Вартість до 10 чоловік:</div>
                       <div class="packages-item__choices tabs">
                         <ul class="tabs__caption">
-                          <li class="active">Опція 1</li>
-                          <li>/ Опція 2</li>
+                          <li class="active" data-val="1 опція - 11000 грн">Опція 1</li>
+                          <li data-val="2 опція - 10000 грн">/ Опція 2</li>
                         </ul>
                         <div class="tabs__content active">
                           <div class="packages-item__price">11000 грн</div>
@@ -512,13 +512,13 @@
                 <!-- END Hidden Required Fields-->
                 <input type="hidden" name="info" value="Contact">
                 <label class="form-line">
-                  <input class="form-line__input rfield" type="text" placeholder="Як вас звати?" required name="contactInfo_name"><span class="form-line__label">Ваше ім'я*</span><span class="error">Поле обов'язкове</span>
+                  <input class="form-line__input rfield" type="text" placeholder="Як вас звати?" required name="name"><span class="form-line__label">Ваше ім'я*</span><span class="error">Поле обов'язкове</span>
                 </label>
                 <label class="form-line">
-                  <input class="form-line__input rfield phone-mask" type="text" placeholder="+380 (00) 000 00 00" required name="contactInfo_phone"><span class="form-line__label">Ваш номер телефону*</span><span class="error">Поле обов'язкове</span>
+                  <input class="form-line__input rfield phone-mask" type="text" placeholder="+380 (00) 000 00 00" required name="phone"><span class="form-line__label">Ваш номер телефону*</span><span class="error">Поле обов'язкове</span>
                 </label>
                 <label class="form-line">
-                  <input class="form-line__input" type="text" placeholder="example@mail.com" name="contactInfo_email"><span class="form-line__label">Ваш e-mail</span>
+                  <input class="form-line__input" type="text" placeholder="example@mail.com" name="email"><span class="form-line__label">Ваш e-mail</span>
                 </label>
                 <div class="form__btn">
                   <button class="btn" type="submit">Забронювати дату</button>
@@ -645,7 +645,7 @@
             <input type="hidden" name="admin_email" value="warriorskiev@gmail.com">
             <input type="hidden" name="form_subject" value="Замовлення - пакет стандарт">
             <!-- END Hidden Required Fields-->
-            <input type="hidden" name="info" value="пакет стандарт">
+            <input type="hidden" name="info" value="пакет стандарт - 1 опція - 11000 грн">
             <div class="form-line">
               <label>
                 <input class="modal__input phone-mask rfield" type="text" placeholder="номер телефону" name="phone">
