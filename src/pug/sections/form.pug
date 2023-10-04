@@ -19,7 +19,13 @@ section.form
           span на
           span цілий
           span рік!
-        form.form__body(enctype="multipart/form-data")
+        form.form__body(enctype="multipart/form-data" name="contact")
+          // Hidden Required Fields
+          input(type='hidden', name='project_name', value='Warriors')
+          input(type='hidden', name='admin_email', value='warriorskiev@gmail.com')
+          input(type='hidden', name='form_subject', value='Contact')
+          // END Hidden Required Fields
+          input(type='hidden', name='info', value='Contact')
           label.form-line
             input.form-line__input.rfield(type="text" placeholder="Як вас звати?" required name="contactInfo_name")
             span.form-line__label Ваше ім'я*

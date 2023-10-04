@@ -38,39 +38,6 @@
     text-align: center;
     max-width: 166px;
     color: #1F1F1F;
-    &__name {
-      font-size: 20px;
-      letter-spacing: 1.5px;
-      margin-bottom: 5px;
-      @include media-lg {
-        font-size: 22px;
-      }
-      @include media-xl {
-        font-size: 30px;
-      }
-      @include media-3xl {
-        font-size: 25px;
-      }
-      @include media-4xl {
-        font-size: 30px;
-      }
-    }
-    &__company {
-      font-size: 8px;
-      letter-spacing: 1.65px;
-      @include media-lg {
-        font-size: 7px;
-      }
-      @include media-xl {
-        font-size: 11px;
-      }
-      @include media-3xl {
-        font-size: 10px;
-      }
-      @include media-4xl {
-        font-size: 11px;
-      }
-    }
   }
   &__contact {
     display: flex;
@@ -164,6 +131,25 @@
     @include media-4xl {
       font-size: 20px;
       padding: 10px 22px;
+    }
+  }
+}
+.logo {
+  img {
+    height: auto;
+    width: 100%;
+    max-width: 130px;
+    @include media-lg {
+      max-width: 150px;
+    }
+    @include media-xl {
+      max-width: 170px;
+    }
+    @include media-xxl {
+      max-width: 190px;
+    }
+    @include media-4xl {
+      max-width: 230px;
     }
   }
 }

@@ -1,6 +1,6 @@
 .home {
-  padding-top: 42px;
-  padding-bottom: 80px;
+  padding-top: 100px;
+  padding-bottom: 40px;
   @include media-md {
     padding-top: 252px;
     padding-bottom: 0;
@@ -120,6 +120,46 @@
       @include media-4xl {
         font-size: 20px;
         padding: 34px 35px;
+      }
+    }
+  }
+  &__icons {
+    display: flex;
+    margin-top: 105px;
+    @include media-lg {
+      margin-top: 0;
+      margin-bottom: 75px;
+    }
+    @include media-xl {
+      margin-top: 80px;
+      margin-bottom: 0px;
+    }
+  }
+  &__icon {
+    display: inline-flex;
+    .icon {
+      fill: #000;
+      width: 20px;
+      height: 20px;
+      fill: #1F1F1F;
+      @include media-lg {
+        width: 25px;
+        height: 25px;
+      }
+      @include media-3xl {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &:hover {
+      .icon {
+        fill: #FF4986;
+      }
+    }
+    &+.home__icon {
+      margin-left: 10px;
+      @include media-3xl {
+        margin-left: 15px;
       }
     }
   }
