@@ -71,10 +71,10 @@ section.hero
     .row
       .offset-1.col-10.offset-lg-0.col-lg-5
         .hero__shooter.shadow
-          img(src="img/hero-shooter.webp", alt="shooter", width="688", height="692")
+          img(data-src="img/hero-shooter.webp", alt="shooter", width="688", height="692", class="lazy")
       .d-none.d-lg-block.offset-lg-4.col-lg-3
         .hero__qwester.shadow
-          img(src="img/hero-qwester.webp", alt="qwester", width="389", height="508")
+          img(data-src="img/hero-qwester.webp", alt="qwester", width="389", height="508", class="lazy")
       .col-12.offset-lg-5.col-lg-6
         .title
           span Ваша
@@ -91,7 +91,7 @@ section.hero
             | Щороку інтереси дітей змінюються, а задачі (декор, смаколики, розважальна програма) лишаються.
           p Ви тижнями продумуєте програму, яка забудеться на наступний день після свята. А замість відпочинку постійно бігаєте і перевіряєте, щоб всі були задоволені.
       .col-12.col-lg-5.offset-lg-2.col-xl-4.hero__img
-        img(src="img/hero-shooters.webp", alt="shooters", width="552", height="540").shadow
+        img(data-src="img/hero-shooters.webp", alt="shooters", width="552", height="540").shadow.lazy
     .row.hero__subtitle
       .col-12.col-lg-4
         .subtitle

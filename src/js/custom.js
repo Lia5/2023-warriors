@@ -1,4 +1,7 @@
 $(function() {
+    let lazyLoadInstance = new LazyLoad({
+        // Your custom settings go here
+    });
     $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
         $(this)
         .addClass('active').siblings().removeClass('active')
