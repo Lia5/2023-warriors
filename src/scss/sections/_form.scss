@@ -46,8 +46,10 @@ input {
       margin-top: 58px;
       margin-bottom: 43px;
     }
-    &:before {
+    &--before {
+      display: none;
       @include media-lg {
+        display: block;
         content: "";
         position: absolute;
         bottom: 182px;
@@ -57,7 +59,7 @@ input {
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        background-image: url('../img/bg/strange.webp');
+        // background-image: url('../img/bg/strange.webp');
         pointer-events: none;
       }
       @include media-xl {

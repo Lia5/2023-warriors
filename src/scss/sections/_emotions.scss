@@ -9,7 +9,7 @@
   @include media-4xl {
     padding-bottom: 230px;
   }
-  &:before {
+  &--before {
     content: "";
     position: absolute;
     bottom: 48px;
@@ -19,7 +19,7 @@
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
-    background-image: url('../img/bg/dots.webp');
+    // background-image: url('../img/bg/dots.webp');
 		pointer-events: none;
   }
   .title {
@@ -58,7 +58,7 @@
   }
   &__description {
     position: relative;
-    &:before {
+    &--before {
       content: "";
       position: absolute;
       top: 44px;

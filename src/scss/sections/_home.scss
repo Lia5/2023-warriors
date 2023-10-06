@@ -19,7 +19,7 @@
     padding-top: 90px;
     padding-bottom: 178px;
   }
-  &:before {
+  &--before {
     content: "";
     position: absolute;
     top: 22px;
@@ -29,7 +29,7 @@
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
-    background-image: url('../img/bg/dots.webp');
+    // background-image: url('../img/bg/dots.webp');
 		pointer-events: none;
   }
   &__title {

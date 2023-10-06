@@ -18,7 +18,7 @@
     margin-top: auto;
     margin-bottom: auto;
   }
-  &:before {
+  &--before {
     content: "";
     position: absolute;
     top: 22px;
@@ -28,14 +28,14 @@
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
-    background-image: url('../img/bg/dots.webp');
+    // background-image: url('../img/bg/dots.webp');
 		pointer-events: none;
     @include media-lg {
       width: 387px;
       height: 1000px;
     }
   }
-  &:after {
+  &--after {
     content: "";
     position: absolute;
     bottom: -50px;
@@ -45,7 +45,7 @@
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
-    background-image: url('../img/bg/dots.webp');
+    // background-image: url('../img/bg/dots.webp');
     transform: scale(-1);
 		pointer-events: none;
     @include media-lg {

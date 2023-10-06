@@ -1,6 +1,12 @@
 $(function() {
-    let lazyLoadInstance = new LazyLoad({
-        // Your custom settings go here
+    // Instance using native lazy loading
+    const lazyContent = new LazyLoad({
+        use_native: true // <-- there you go
+    });
+
+    // Instance without native lazy loading
+    const lazyBackground = new LazyLoad({
+        // DON'T PASS use_native: true HERE
     });
     $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
         $(this)

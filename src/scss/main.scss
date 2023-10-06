@@ -188,14 +188,16 @@ ul,li {
 			padding: 0 20px;
 		}
 	}
-	&:after {
+	&--after {
+		display: none;
 		@include media-md {
+			display: block;
 			content: "";
 			position: absolute;
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: contain;
-			background-image: url('../img/bg/sp-woman.webp');
+			// background-image: url('../img/bg/sp-woman.webp');
 			pointer-events: none;
 			top: -272px;
 			right: -301px;
@@ -228,14 +230,16 @@ ul,li {
 
 		}
 	}
-	&:before {
+	&--before {
+		display: none;
 		@include media-lg {
+			display: block;
 			content: "";
 			position: absolute;
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: contain;
-			background-image: url('../img/bg/spider.webp');
+			// background-image: url('../img/bg/spider.webp');
 			pointer-events: none;
 			bottom: -339px;
 			left: -109px;
