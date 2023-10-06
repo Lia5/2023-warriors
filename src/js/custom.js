@@ -1,4 +1,5 @@
 $(function() {
+    document.addEventListener('touchstart', onTouchStart, {passive: true});
     // Instance using native lazy loading
     const lazyContent = new LazyLoad({
         use_native: true // <-- there you go
