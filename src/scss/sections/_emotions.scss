@@ -208,12 +208,23 @@
       }
     }
     &__content {
-      flex-direction: column-reverse;
       @include media-md {
+        display: flex;
+        opacity: 0;
+        height: 0;
+        flex-direction: column-reverse;
+        transition: opacity 0.3s ease-in-out;
         flex-direction: column;
       }
       &.active {
-        display: flex;
+        @include media-md {
+          display: flex;
+          opacity: 1;
+          height: auto;
+        }
+        .emotions-tabs__img {
+          transform: translateX(0);
+        }
       }
     }
     .text {
@@ -247,6 +258,12 @@
       }
     }
     &__img {
+      margin-bottom: 30px;
+      @include media-md {
+        margin-bottom: 0;
+        transition: transform 0.8s ease-in-out;
+        transform: translateX(-100px);
+      }
       img {
         max-width: 100%;
         @include media-3xl {

@@ -10,12 +10,32 @@
 	box-sizing: border-box;
 }
 .home,
-.main-title {
+.main-title,
+.char,
+.gsap-from-left,
+.gsap-from-right,
+.gsap-from-top,
+.hero__qwester,
+.hero__shooter,
+.title--before,
+.hero__img,
+.hero__img--before,
+.advantages__img,
+.counter--before,
+.counterOne,
+.counterTwo,
+.emotions__img,
+.emotions__description--before,
+.emotions-tabs__img,
+.why__img,
+.packages-item-wrap,
+.title--steps--before,
+.packages-step,
+.reviews__item,
+.subtitle--before,
+.form__img,
+.contact__img {
 	will-change: transform;
-	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
 }
 
 html {

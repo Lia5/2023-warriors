@@ -90,7 +90,7 @@ itemsLeft.forEach(itemLeft => {
     scrollTrigger: {
       trigger: itemLeft,
       start: 'top 80%',
-      end: 'bottom 20%',
+      end: 'bottom 50%',
       scrub: true
     }
   })
@@ -104,7 +104,7 @@ itemsRight.forEach(itemRight => {
     scrollTrigger: {
       trigger: itemRight,
       start: 'top 80%',
-      end: 'bottom 20%',
+      end: 'bottom 50%',
       scrub: true
     }
   })
@@ -125,14 +125,12 @@ itemsTop.forEach(itemTop => {
 });
 
 // reviews
-
 gsap.utils.toArray('.reviews__item').forEach(function(el) {
   let tl3 = gsap.timeline({
     scrollTrigger: {
       trigger: el,
       start: 'top 90%',
       end: 'bottom 60%',
-      markers: true,
       scrub: true
     },
   });
@@ -144,5 +142,3 @@ gsap.utils.toArray('.reviews__item').forEach(function(el) {
     scrub: true
   });
 });
-
-tl3.play();
