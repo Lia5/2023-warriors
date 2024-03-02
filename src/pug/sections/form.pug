@@ -4,9 +4,10 @@ section.form
     .row
       .col-12.col-lg-6.col-xl-5.col-xxl-6
         .form__img
-          img(src="img/form.webp", alt="form", width="664", height="640").shadow
+          img(data-src="img/form.webp", alt="form", width="664", height="640").shadow.lazy
       .col-12.col-lg-6.offset-xl-1.col-xl-5.offset-xxl-0
         .subtitle
+          .subtitle--before(class="lazy" data-bg="img/bg/strange.webp")
           span Створять
           span дітям
           span.accent-text свято,

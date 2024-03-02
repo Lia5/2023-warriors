@@ -17,7 +17,7 @@
     padding-bottom: 473px;
   }
   z-index: 1;
-  &:before {
+  &--before {
     content: "";
     position: absolute;
     bottom: 337px;
@@ -27,7 +27,7 @@
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
-    background-image: url('../img/bg/dots.webp');
+    // background-image: url('../img/bg/dots.webp');
 		pointer-events: none;
   }
   .title {
@@ -86,8 +86,10 @@
         line-height: 100px;
       }
     }
-    &:before {
+    &--before {
+      display: none;
       @include media-lg {
+        display: block;
         content: "";
         position: absolute;
         top: -540px;
@@ -97,7 +99,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        background-image: url('../img/bg/sp-man.webp');
+        // background-image: url('../img/bg/sp-man.webp');
         pointer-events: none;
         z-index: -1;
       }
@@ -194,15 +196,17 @@
         width: 109%;
       }
     }
-    &:before {
+    &--before {
+      display: none;
       @include media-lg {
+        display: block;
         content: "";
         position: absolute;
         height: 431px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        background-image: url('../img/bg/spider-red.webp');
+        // background-image: url('../img/bg/spider-red.webp');
         z-index: -1;
         pointer-events: none;
         width: 520px;

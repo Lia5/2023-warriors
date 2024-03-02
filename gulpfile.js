@@ -41,6 +41,7 @@ gulp.task('js', function() {
 		'src/libs/slick/slick.min.js',
 		'src/libs/fancybox/jquery.fancybox.js',
 		'src/libs/mask/jquery.maskedinput.min.js',
+		'src/libs/vanilla-lazyload/vanilla-lazyload.min.js',
 		'src/js/custom.js', // Always at the end
 		])
 	.pipe(concat('custom.js'))

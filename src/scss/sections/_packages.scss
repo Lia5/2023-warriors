@@ -12,7 +12,7 @@
   @include media-4xl {
     padding-bottom: 417px;
   }
-  &:before {
+  &--before {
     content: "";
     position: absolute;
     bottom: 730px;
@@ -22,7 +22,7 @@
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
-    background-image: url('../img/bg/dots.webp');
+    // background-image: url('../img/bg/dots.webp');
 		pointer-events: none;
   }
   .title {
@@ -39,8 +39,10 @@
     @include media-4xl {
       margin-bottom: 85px;
     }
-    &:before {
+    &--before {
+      display: none;
       @include media-lg {
+        display: block;
         content: "";
         position: absolute;
         top: -457px;
@@ -50,7 +52,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        background-image: url('../img/bg/cap.webp');
+        // background-image: url('../img/bg/cap.webp');
         pointer-events: none;
       }
       @include media-xl {
@@ -90,7 +92,7 @@
       @include media-4xl {
         margin-bottom: 0;
       }
-      &:before {
+      &--before {
         content: "";
         position: absolute;
         left: auto;
@@ -102,7 +104,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        background-image: url('../img/bg/cat.webp');
+        // background-image: url('../img/bg/cat.webp');
         pointer-events: none;
         @include media-lg {
           bottom: 73px;

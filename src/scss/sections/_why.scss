@@ -6,7 +6,7 @@
   @include media-4xl {
     padding-bottom: 250px;
   }
-  &:before {
+  &--before {
     content: "";
     position: absolute;
     transform: scale(-1);
@@ -17,7 +17,7 @@
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
-    background-image: url('../img/bg/dots.webp');
+    // background-image: url('../img/bg/dots.webp');
 		pointer-events: none;
   }
   .title {
@@ -35,14 +35,16 @@
     @include media-4xl {
       margin-bottom: 130px;
     }
-    &:before {
+    &--before {
+      display: none;
       @include media-lg {
+        display: block;
         content: "";
         position: absolute;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        background-image: url('../img/bg/iron.webp');
+        // background-image: url('../img/bg/iron.webp');
         top: -90px;
         left: 494px;
         width: 500px;
