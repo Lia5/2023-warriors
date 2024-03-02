@@ -6,22 +6,28 @@ html(lang='en')
 	include ../common/head
 	body
 		include ../common/sprite
-		.main
-			include ../sections/header
-			include ../sections/home
-			include ../sections/hero
-			include ../sections/advantages
-			include ../sections/emotions
-			include ../sections/why
-			include ../sections/packages
-			include ../sections/reviews
-			include ../sections/form
-			include ../sections/contact
-			include ../sections/footer
-			a(href="#header").scroll-to.footer__up
-				svg.icon
-					use(xlink:href="#icon-up")
+		.wrapper
+			.main
+				include ../sections/header
+				include ../sections/home
+				include ../sections/hero
+				include ../sections/advantages
+				include ../sections/emotions
+				include ../sections/why
+				include ../sections/packages
+				include ../sections/reviews
+				include ../sections/form
+				include ../sections/contact
+				include ../sections/footer
+				a(href="#header").scroll-to.footer__up
+					svg.icon
+						use(xlink:href="#icon-up")
 		include ../sections/modal
 
+		script(src="js/libs/gsap/gsap.min.js" defer)
+		script(src="js/libs/gsap/ScrollTrigger.min.js" defer)
+		script(src="js/libs/gsap/ScrollSmoother.min.js" defer)
+		script(src="js/libs/gsap/split-type.min.js" defer)
+		script(src="js/anim.js" defer)
 		script(src="js/custom.js")
 	// END body

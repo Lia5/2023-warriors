@@ -9,6 +9,15 @@
 * {
 	box-sizing: border-box;
 }
+.home,
+.main-title {
+	will-change: transform;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
 html {
 	height: 100%;
 	width: 100%;
@@ -17,6 +26,7 @@ html {
 		height: auto;
 	}
 }
+
 body {
 	min-height: 100%;
 	display: flex;
@@ -271,6 +281,9 @@ ul,li {
 			height: 372px;
 		}
 	}
+}
+.main-title__wrapper {
+	overflow: hidden;
 }
 .title {
 	display: flex;

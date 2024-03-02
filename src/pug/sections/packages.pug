@@ -4,12 +4,12 @@ section.packages#packages
     .row 
       .col-12 
         .title
-          .title--before(class="lazy" data-bg="img/bg/cap.webp")
+          .title--before(class="lazy" data-bg="img/bg/cap.webp" data-speed="1.2")
           span Пакети
           span.accent-text святкування
       .col-12
         .packages-items
-          .packages-item-wrap
+          .packages-item-wrap.gsap-from-top
             .packages-item
               .packages-item__name
                 | Пакет
@@ -30,7 +30,7 @@ section.packages#packages
                 .packages-item__price 5 000 грн
               .packages-item__btn
                 a(href="#packageMin").btn.modal-open Обрати
-          .packages-item-wrap
+          .packages-item-wrap.gsap-from-top
             .packages-item
               .packages-item__name
                 | Пакет
@@ -72,7 +72,7 @@ section.packages#packages
                       | )
               .packages-item__btn
                 a(href="#packageStandart").btn.modal-open Обрати
-          .packages-item-wrap
+          .packages-item-wrap.gsap-from-top
             .packages-item
               .packages-item__name
                 | Пакет
@@ -98,23 +98,23 @@ section.packages#packages
         .description Під час свята на території закладу не буде нікого із сторонніх людей. Це день лише для вас!
       .col-12
         .title.title--steps
-          .title--steps--before(class="lazy" data-bg="img/bg/cat.webp")
+          .title--steps--before(class="lazy" data-bg="img/bg/cat.webp" data-speed="1.2")
           span Як замовити
           span.accent-text свято?
   .container
     .row
       .col-12
         .packages__steps
-          .packages-step
+          .packages-step.gsap-from-left
             .packages-step__name.accent-text Крок 1.
             .packages-step__text Ви лишаєте заявку і обираєте день
-          .packages-step
+          .packages-step.gsap-from-left
             .packages-step__name.accent-text Крок 2.
             .packages-step__text Обговорюємо деталі
-          .packages-step
+          .packages-step.gsap-from-right
             .packages-step__name.accent-text Крок 3.
             .packages-step__text Плануємо список активностей
-          .packages-step
+          .packages-step.gsap-from-right
             .packages-step__name.accent-text Крок 4.
             .packages-step__text Ви відпочиваєте, ми організовуємо
   .divider

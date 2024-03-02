@@ -262,7 +262,5 @@ $(function() {
 		return false;
     });
 
-
-
 });
 

@@ -7,7 +7,7 @@ section.advantages
           .title--before(class="lazy" data-bg="img/bg/spider-red.webp")
           span захоплюючі
           span.accent-text пригоди
-        .advantages__img.shadow
+        .advantages__img.shadow(data-speed="0.8")
           .advantages__img--before(class="lazy" data-bg="img/bg/halk.webp")
           img(data-src="img/tent.webp", alt="tent", width="972", height="560", class="lazy")
       .col-12.offset-lg-1.col-lg-5.col-xl-4.col-xxl-3
@@ -16,16 +16,17 @@ section.advantages
     .row
       .col-12.offset-lg-2.col-lg-8
         .advantages__counter.counter
+          .counter--before(class="lazy" data-bg="img/bg/halk.webp" data-speed="1.2")
           .counter__item
             .counter__num
-              | 10
+              span(class="counterOne" data-number="10") 0
               span.counter__plus +
             .counter__text
               span.accent-color Років
               | проведення дитячих свят
           .counter__item
             .counter__num
-              | 15
+              span(class="counterTwo" data-number="15") 0
               span.counter__plus +
             .counter__text
               span.accent-color Років
